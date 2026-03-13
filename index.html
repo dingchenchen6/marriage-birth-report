@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no, viewport-fit=cover" name="viewport"/>
+<title>婚育困局背后：中国一代人的成本账本、性别结构与未来中国（AI辅助生成）</title>
+<meta content="婚育困局背后：中国一代人的成本账本、性别结构与未来中国（AI辅助生成）" property="og:title"/>
+<meta content="结婚登记降至610.6万对、2025年出生人口进一步降到792万、养育成本高企、性别化成本上升——一份关于中国婚育困局背后结构性原因的数据报告。" property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="telephone=no" name="format-detection"/>
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#05060a;--cd:#0f1019;--red:#dc3545;--emb:#e07a2f;--gld:#c49a3c;--tea:#1a9a8e;--blu:#3d7bb8;--cyn:#0891b2;--vio:#7c3aed;--pnk:#be185d;--t0:#fff;--t1:#dfe0e8;--t2:#8c8ea0;--t3:#50526a;--bd:rgba(255,255,255,.06);--bd2:rgba(255,255,255,.10)}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--t1);font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans SC',system-ui,sans-serif;line-height:1.9;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-size:15px}
+::selection{background:var(--red);color:#fff}
+a{color:var(--tea);text-decoration:none}
+strong{color:inherit;font-weight:600}
+.mn{font-family:'SF Mono',Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.016;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+/* HERO */
+.hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 24px 80px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 25% 35%,rgba(220,53,69,.06) 0%,transparent 70%),radial-gradient(ellipse 50% 60% at 75% 65%,rgba(26,154,142,.04) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 50% 90%,rgba(224,122,47,.03) 0%,transparent 70%)}
+.hero-tag{display:inline-block;padding:4px 20px;border:1px solid var(--bd2);border-radius:100px;font-size:10px;letter-spacing:6px;color:var(--t3);margin-bottom:32px;animation:ri .7s ease both}
+.hero h1{font-weight:900;font-size:clamp(26px,6.5vw,52px);line-height:1.2;margin-bottom:16px;animation:ri .7s .08s ease both}
+.hero h1 em{font-style:normal;display:block;background:linear-gradient(135deg,var(--red),var(--emb),var(--gld));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero h1 span{display:block;font-size:.48em;font-weight:400;color:var(--t2);margin-top:8px;-webkit-text-fill-color:var(--t2)}
+.hero-desc{font-size:13.5px;color:var(--t2);max-width:540px;margin:0 auto 40px;line-height:2.1;animation:ri .7s .16s ease both}
+.hero-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:560px;width:100%;animation:ri .7s .24s ease both}
+@media(min-width:560px){.hero-grid{grid-template-columns:repeat(5,1fr);max-width:860px}}
+.hero-cell{text-align:center;padding:14px 8px}
+.hero-cell .mn{font-size:clamp(20px,5vw,30px);font-weight:700;display:block;line-height:1.2}
+.hero-cell small{font-size:10px;color:var(--t3);margin-top:3px;display:block}
+.scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);color:var(--t3);font-size:10px;letter-spacing:4px;animation:bob 2.5s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+@keyframes ri{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:rgba(5,6,10,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--bd);overflow-x:auto;-webkit-overflow-scrolling:touch}
+.nav::-webkit-scrollbar{display:none}
+.nav-inner{display:flex;max-width:860px;margin:0 auto;padding:0 6px}
+.nav a{color:var(--t3);font-size:11.5px;font-weight:500;padding:14px 13px;white-space:nowrap;border-bottom:2px solid transparent;transition:.25s;flex-shrink:0}
+.nav a.active,.nav a:hover{color:var(--red);border-bottom-color:var(--red)}
+/* LAYOUT */
+.wrap{max-width:860px;margin:0 auto;padding:0 18px}
+.sec{padding:52px 0 56px;border-bottom:1px solid var(--bd);opacity:0;transform:translateY(24px);transition:opacity .55s,transform .55s}
+.sec.vis{opacity:1;transform:translateY(0)}
+.sec-lb{font-size:10px;letter-spacing:4px;color:var(--red);margin-bottom:6px;font-weight:600}
+.sec-ti{font-weight:900;font-size:clamp(20px,4.5vw,28px);line-height:1.35;margin-bottom:6px}
+.sec-su{font-size:13px;color:var(--t2);margin-bottom:30px;line-height:1.8}
+.txt{font-size:14px;color:var(--t2);line-height:2}
+/* COMPONENTS */
+.cd{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:22px;margin-bottom:14px}
+.cd-ac{border-left:4px solid var(--red)}
+.st{background:var(--cd);border-radius:12px;padding:16px;border-left:3px solid var(--red)}
+.st-v{font-size:clamp(18px,4vw,24px);font-weight:700;line-height:1.15;margin-bottom:3px}
+.st-l{font-size:11.5px;font-weight:600;color:var(--t1)}
+.st-s{font-size:9.5px;color:var(--t3);margin-top:2px}
+.qt{background:linear-gradient(135deg,rgba(220,53,69,.04),rgba(224,122,47,.02));border-left:3px solid var(--red);border-radius:0 12px 12px 0;padding:18px 20px;margin:18px 0;font-size:13px;color:var(--t2);line-height:2}
+.qt .src{display:block;margin-top:6px;font-size:10.5px;color:var(--t3);font-style:italic}
+.hl{display:inline;padding:1px 5px;border-radius:3px;font-weight:700;font-size:12.5px}
+.hl-r{background:rgba(220,53,69,.1);color:var(--red)}.hl-e{background:rgba(224,122,47,.1);color:var(--emb)}.hl-t{background:rgba(26,154,142,.1);color:var(--tea)}.hl-b{background:rgba(61,123,184,.1);color:var(--blu)}
+.fc{background:rgba(255,255,255,.012);border-radius:12px;padding:18px;border-top:3px solid var(--red);margin-bottom:10px}
+.fc h4{font-size:13.5px;font-weight:700;margin-bottom:6px}
+.fc p{font-size:12px;color:var(--t2);line-height:2}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.g2 .cd{text-align:left}
+.g2 .sol{text-align:left}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.g4{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(min-width:560px){.g4{grid-template-columns:repeat(4,1fr)}}
+.big-n{text-align:center;padding:24px 16px;margin:16px 0}
+.big-n .mn{font-size:clamp(36px,8vw,56px);font-weight:900;line-height:1;margin-bottom:4px}
+.big-n small{font-size:12px;color:var(--t3)}
+.phi{position:relative;padding:28px 24px;margin:18px 0;border-radius:14px;background:linear-gradient(135deg,rgba(124,58,237,.04),rgba(220,53,69,.03));border:1px solid rgba(124,58,237,.12)}
+.phi h4{font-size:14px;font-weight:700;color:var(--vio);margin-bottom:10px}
+.phi p{font-size:13px;color:var(--t2);line-height:2.1}
+.sol{font-size:12px;color:var(--t2);line-height:2;padding-left:18px;position:relative;margin-bottom:1px}
+.sol::before{content:'›';position:absolute;left:3px;font-weight:700;color:var(--red)}
+.ref{font-size:11px;color:var(--t3);line-height:2;padding:6px 0;border-bottom:1px solid var(--bd)}
+.ref:last-child{border-bottom:none}
+.ref b{color:var(--t2);font-weight:600}
+/* CHART BOX */
+.cht{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:18px;margin-bottom:14px;overflow:hidden}
+.cht-h{font-size:13px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:6px}
+.cht-h::before{content:'';width:3px;height:14px;background:var(--red);border-radius:2px;flex-shrink:0}
+.cht-f{font-size:9.5px;color:var(--t3);margin-top:10px;text-align:center;line-height:1.6}
+/* SVG CHART STYLES */
+.cht svg{width:100%;display:block}
+.bar-label{fill:var(--t2);font-size:10px;font-family:inherit}
+.bar-value{fill:var(--t1);font-size:10px;font-family:'SF Mono',Menlo,Consolas,monospace;font-weight:600}
+.axis-label{fill:var(--t3);font-size:9px;font-family:inherit}
+.grid-line{stroke:rgba(255,255,255,.04);stroke-width:1}
+/* CSS BAR CHART */
+.css-bar{margin-bottom:8px}
+.css-bar-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.css-bar-label{font-size:11px;color:var(--t2);min-width:70px;text-align:right;flex-shrink:0}
+.css-bar-track{flex:1;height:22px;background:rgba(255,255,255,.03);border-radius:4px;overflow:hidden;position:relative}
+.css-bar-fill{height:100%;border-radius:4px;transition:width 1.2s cubic-bezier(.22,1,.36,1);display:flex;align-items:center;justify-content:flex-end;padding-right:6px}
+.css-bar-val{font-size:9px;font-weight:700;color:rgba(255,255,255,.9);white-space:nowrap}
+.css-bar-ext{font-size:11px;color:var(--t1);margin-left:10px;min-width:72px;flex-shrink:0;font-weight:700;opacity:.92}
+/* DONUT CSS */
+.donut-wrap{display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:center}
+.donut-svg{width:180px;height:180px;flex-shrink:0}
+.donut-legend{display:flex;flex-direction:column;gap:4px}
+.donut-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--t2)}
+.donut-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+/* PROGRESS BAR (for insurance etc) */
+.pr{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--bd)}
+.pr:last-child{border-bottom:none}
+.pr-l{font-size:11.5px;color:var(--t1);min-width:80px;flex-shrink:0}
+.pr-bar{flex:1;height:6px;background:rgba(255,255,255,.04);border-radius:3px;overflow:hidden}
+.pr-fill{height:100%;border-radius:3px;width:0;transition:width 1.4s cubic-bezier(.22,1,.36,1)}
+.pr-v{font-size:11px;font-weight:700;min-width:80px;text-align:right;flex-shrink:0}
+/* LINE CHART CSS */
+.line-chart{position:relative;padding:10px 0}
+.line-chart svg{width:100%;overflow:visible}
+/* RADAR CSS */
+.radar-wrap{display:flex;justify-content:center;padding:10px 0}
+.radar-wrap svg{max-width:320px;width:100%}
+/* SHARE */
+.share{position:fixed;bottom:0;left:0;right:0;z-index:200;background:rgba(5,6,10,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid var(--bd);padding:10px 16px;display:flex;align-items:center;justify-content:center;gap:10px}
+.share-btn{display:inline-flex;align-items:center;gap:5px;padding:10px 22px;border:none;border-radius:100px;font-size:13px;font-weight:700;cursor:pointer;transition:.15s;font-family:inherit}
+.share-btn:active{transform:scale(.95)}
+.share-p{background:var(--red);color:#fff}
+.share-s{background:rgba(255,255,255,.08);color:var(--t1)}
+.toast{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.9);background:rgba(0,0,0,.88);color:#fff;padding:14px 28px;border-radius:10px;font-size:14px;z-index:300;opacity:0;pointer-events:none;transition:.25s}
+.toast.show{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.toc{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:22px;margin:28px 0}
+.toc-t{font-size:13px;font-weight:700;margin-bottom:12px}
+.toc a{display:block;font-size:12px;color:var(--t2);padding:5px 0;border-bottom:1px solid var(--bd);transition:.2s}
+.toc a:last-child{border-bottom:none}
+.toc a:hover{color:var(--red);padding-left:6px}
+.toc .n{color:var(--red);font-weight:600;margin-right:6px}
+.footer{padding:40px 0 90px;text-align:center}
+.footer p{font-size:10px;color:var(--t3);line-height:2;max-width:700px;margin:0 auto;padding:0 16px}
+@media(max-width:480px){.g2,.g3{grid-template-columns:1fr}.cd{padding:16px}.cht{padding:14px}.sec{padding:36px 0 40px}}
+/* ===== Citation tags / 学术引用角标 ===== */
+.has-cite{position:relative}
+.cite-tag{ position:absolute;top:10px;right:12px; font-size:11px;line-height:1; padding:4px 8px;border-radius:999px; border:1px solid var(--bd2); background:rgba(20,22,30,.55); color:var(--t2); text-decoration:none; backdrop-filter: blur(6px);
+}
+.cite-tag:hover{border-color:rgba(255,255,255,.35);color:var(--t1);transform:translateY(-1px)}
+.cite-inline{font-size:11px;vertical-align:super;margin-left:2px}
+.cite-inline a{color:var(--t2);text-decoration:none;border-bottom:1px dotted rgba(255,255,255,.25)}
+.cite-inline a:hover{color:var(--t1);border-bottom-color:rgba(255,255,255,.45)}
+.ref.flash{outline:2px solid rgba(220,53,69,.45);border-radius:10px;padding:10px;background:rgba(220,53,69,.06)}
+/* Floating back-to-top */
+#toTop{ position:fixed;right:16px;bottom:18px;z-index:99; display:none;align-items:center;gap:8px; padding:10px 12px;border-radius:999px; border:1px solid var(--bd2); background:rgba(18,20,28,.65); color:var(--t2);font-size:12px;cursor:pointer; backdrop-filter: blur(8px);
+}
+#toTop:hover{color:var(--t1);border-color:rgba(255,255,255,.35);transform:translateY(-1px)}
+
+/* Alignment & readability tweaks */
+.toc, .toc-t, .toc a{ text-align:left }
+#s12, #s12 .cd, #s12 .ref, #s12 .sec-su, #s12 .txt{ text-align:left }
+.ref{ text-align:left }
+.txt, .sec-su, .hero-desc, .qt, .phi p, .fc p{ text-align:justify; text-justify:inter-ideograph }
+.txt, .sec-su, .hero-desc{ hyphens:auto }
+
+/* QR box */
+.qrbox{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:22px;flex-wrap:wrap}
+.qrbox img{width:112px;height:112px;border-radius:12px;border:1px solid var(--bd);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.qrbox .qrcap{max-width:360px;text-align:left}
+.qrbox .qrcap .t{font-size:12px;font-weight:700;color:var(--t1);margin-bottom:4px}
+.qrbox .qrcap .s{font-size:10.5px;color:var(--t3);line-height:1.7}
+.qrbox .qrcap .lnk{font-size:10.5px;color:var(--tea);word-break:break-all}
+
+
+
+/* Province map table */
+.ptb{width:100%;border-collapse:collapse;font-size:11px;margin:10px 0}
+.ptb th{text-align:left;color:var(--t3);font-weight:600;padding:8px 6px;border-bottom:1px solid var(--bd2);font-size:10px;letter-spacing:1px}
+.ptb td{padding:7px 6px;border-bottom:1px solid var(--bd);color:var(--t2)}
+.ptb tr:hover td{background:rgba(255,255,255,.02)}
+.ptb .prov{color:var(--t1);font-weight:600}
+.ptb .hi{color:var(--red);font-weight:700}
+.ptb .md{color:var(--emb);font-weight:600}
+.ptb .lo{color:var(--tea);font-weight:600}
+/* Tag pills */
+.tag{display:inline-block;padding:2px 10px;border-radius:100px;font-size:10px;font-weight:600;margin:2px}
+.tag-r{background:rgba(220,53,69,.12);color:var(--red)}
+.tag-e{background:rgba(224,122,47,.12);color:var(--emb)}
+.tag-t{background:rgba(26,154,142,.12);color:var(--tea)}
+.tag-b{background:rgba(61,123,184,.12);color:var(--blu)}
+.tag-v{background:rgba(124,58,237,.12);color:var(--vio)}
+/* VS comparison */
+.vs-row{display:flex;gap:12px;margin:8px 0;align-items:stretch}
+.vs-box{flex:1;background:rgba(255,255,255,.015);border-radius:10px;padding:14px;border-top:3px solid var(--red)}
+.vs-box.b{border-top-color:var(--tea)}
+.vs-box h5{font-size:12px;font-weight:700;margin-bottom:8px}
+.vs-box p{font-size:11.5px;color:var(--t2);line-height:1.9}
+@media(max-width:480px){.vs-row{flex-direction:column}}
+/* Cost breakdown stack */
+.cost-stack{display:flex;flex-direction:column;gap:4px;margin:10px 0}
+.cost-item{display:flex;align-items:center;gap:8px}
+.cost-bar{height:20px;border-radius:4px;display:flex;align-items:center;padding:0 8px;font-size:9px;font-weight:700;color:rgba(255,255,255,.9);min-width:40px}
+.cost-label{font-size:11px;color:var(--t2);min-width:70px;text-align:right;flex-shrink:0}
+.cost-val{font-size:11px;color:var(--t1);font-weight:600;margin-left:auto;min-width:60px;text-align:right}
+
+
+
+/* ===== Mobile fix patch ===== */
+html{-webkit-text-size-adjust:100%}
+body{
+  padding-bottom: calc(120px + env(safe-area-inset-bottom, 0px));
+  overflow-x:hidden;
+}
+.wrap,.sec,.card,.toc,.share,.footer{
+  overflow: visible;
+}
+section.sec{
+  scroll-margin-top: 72px;
+}
+.share{
+  padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+}
+#toTop{
+  bottom: calc(96px + env(safe-area-inset-bottom, 0px));
+}
+.tb-wrap,.table-wrap,.chart-wrap{
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+}
+svg,img{
+  max-width:100%;
+  height:auto;
+}
+@media (max-width: 860px){
+  .hero-grid,.g2,.g3,.g4,.cards,.kpis,.metrics,.two-col,.three-col{
+    grid-template-columns:1fr !important;
+    display:grid !important;
+  }
+  .hero{
+    min-height:auto !important;
+    padding-bottom: 18px !important;
+  }
+  .hero h1{
+    font-size: clamp(28px, 7.5vw, 42px) !important;
+    line-height:1.16 !important;
+  }
+  .hero-desc{
+    font-size:15px !important;
+    line-height:1.8 !important;
+  }
+  .wrap{
+    width:min(100% - 24px, 1120px) !important;
+  }
+  .toc{
+    padding:16px !important;
+  }
+  .toc a{
+    display:block !important;
+    line-height:1.65 !important;
+    padding:10px 0 !important;
+    white-space:normal !important;
+  }
+  .sec{
+    padding:18px 0 !important;
+  }
+  .sec-ti{
+    font-size:24px !important;
+    line-height:1.3 !important;
+  }
+  .sec-su,.txt,.qt{
+    font-size:15px !important;
+    line-height:1.9 !important;
+    text-align:justify !important;
+    text-justify:inter-ideograph !important;
+  }
+  .card{
+    padding:16px !important;
+    border-radius:18px !important;
+  }
+  .css-bar-row{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    gap:6px 10px !important;
+    align-items:flex-start !important;
+  }
+  .css-bar-lab{
+    min-width:unset !important;
+    width:100% !important;
+    font-size:13px !important;
+    line-height:1.45 !important;
+  }
+  .css-bar-track{
+    width:100% !important;
+    min-width:0 !important;
+    flex:0 0 100% !important;
+  }
+  .css-bar-ext{
+    width:auto !important;
+    font-size:13px !important;
+    line-height:1.35 !important;
+    margin-left:0 !important;
+  }
+  .tb{
+    display:block !important;
+    width:100% !important;
+    overflow-x:auto !important;
+    -webkit-overflow-scrolling:touch !important;
+    white-space:nowrap !important;
+  }
+  .tb table,table{
+    min-width:680px !important;
+  }
+  .nav-inner{
+    gap:10px !important;
+    overflow-x:auto !important;
+    white-space:nowrap !important;
+    -webkit-overflow-scrolling:touch !important;
+    padding-bottom:4px !important;
+  }
+}
+</style>
+</head>
+<body>
+<!-- ============ HERO ============ -->
+<section class="hero">
+<div class="hero-tag">深 度 数 据 报 告 · 2 0 2 6</div>
+<h1><em>婚育困局背后</em><span>一代人的成本账本、性别结构与未来中国</span></h1>
+<p class="hero-desc">这一代年轻人并不是突然不相信爱情了，也不是集体失去了责任感。真正变化的是，婚姻和生育从人生默认选项，逐渐变成了一道高成本、高风险、强约束的综合题。当2024年结婚登记降至610.6万对、出生人口为954万，而2025年又进一步降到792万时，我们看到的不只是“年轻人不想结婚生孩子”，而是一个社会的成本结构、情感秩序与制度环境，正在被重新书写。</p>
+<div class="hero-grid">
+<div class="hero-cell"><b class="mn" style="color:var(--red)">610.6万</b><small>2024结婚登记·45年最低</small></div>
+<div class="hero-cell"><b class="mn" style="color:var(--emb)">1.05</b><small>近年研究估计TFR·低于更替水平</small></div>
+<div class="hero-cell"><b class="mn" style="color:var(--tea)">53.8万</b><small>养一孩至18岁均费</small></div>
+<div class="hero-cell"><b class="mn" style="color:var(--blu)">12.27万</b><small>全国彩礼均值</small></div>
+<div class="hero-cell"><b class="mn" style="color:var(--vio)">51.8%</b><small>大学生认为婚姻不重要</small></div>
+</div>
+<div class="scroll-hint">▽ 向 下 探 索</div>
+</section>
+<!-- ============ NAV ============ -->
+<nav class="nav"><div class="nav-inner"><a href="#s1">现象</a><a href="#s12">现实</a><a href="#s2">结婚</a><a href="#s3">生育</a><a href="#s13">性别</a><a href="#s4">彩礼</a><a href="#s5">房价</a><a href="#s6">养育</a><a href="#s7">就业</a><a href="#s8">爱情</a><a href="#s9">省份</a><a href="#s10">后果</a><a href="#s11">出路</a><a href="#s14">文献</a></div></nav>
+<div class="wrap">
+<!-- TOC -->
+<div class="toc"><div class="toc-t">📑 全文目录（14章）</div><a href="#s1"><span class="n">01</span> 现象：消失的爱人</a><a href="#s12"><span class="n">02</span> 现实：数据可做说明</a><a href="#s2"><span class="n">03</span> 结婚：结婚登记为什么断崖式下跌</a><a href="#s3"><span class="n">04</span> 生育：低生育不只是“不想生”</a><a href="#s13"><span class="n">05</span> 性别结构：谁在承担婚育制度的隐性成本</a><a href="#s4"><span class="n">06</span> 彩礼：为什么越来越像一场交易</a><a href="#s5"><span class="n">07</span> 房价：房子如何变成婚育的闸门</a><a href="#s6"><span class="n">08</span> 养育：为什么中国孩子“太贵了”</a><a href="#s7"><span class="n">09</span> 就业：收入、时间与预期为何一起失稳</a><a href="#s8"><span class="n">10</span> 爱情观：爱与责任</a><a href="#s9"><span class="n">11</span> 省份图谱：一个中国，多个婚育世界</a><a href="#s10"><span class="n">12</span> 后果：人口收缩之后，谁来承担未来</a><a href="#s11"><span class="n">13</span> 出路：什么样的改革才可能真正改变趋势</a><a href="#s14"><span class="n">14</span> 参考文献与数据来源</a></div>
+<!-- ============ S1: PHENOMENON ============ -->
+<!-- ============ S2: MARRIAGE DATA ============ -->
+<!-- ============ S3: FERTILITY ============ -->
+<!-- ============ S4: BRIDE PRICE (NEW!) ============ -->
+<!-- ============ S5: HOUSING ============ -->
+<!-- ============ S6: CHILD-REARING COST ============ -->
+<!-- ============ S7: EMPLOYMENT ============ -->
+<!-- ============ S8: LOVE & VALUES (NEW!) ============ -->
+<!-- ============ S9: PROVINCIAL DIFFERENCES (NEW!) ============ -->
+<!-- ============ S10: CONSEQUENCES (EXPANDED) ============ -->
+<!-- ============ S11: SOLUTIONS ============ -->
+<!-- ============ S12: 2025 UPDATE ============ -->
+<!-- ============ S13: GENDER & FEMINISM ============ -->
+<!-- ============ S14: REFERENCES ============ -->
+<section class="sec" id="s1">
+<div class="sec-lb">01 — 现象</div>
+<h2 class="sec-ti">现象：消失的爱人</h2>
+<p class="sec-su">从“默认会发生”到“先等等再说”，婚育下行不是一时情绪，而是一种正在成形的社会气候。</p>
+<div class="qt">从“到年龄了自然会结婚生孩子”，到“先工作稳定、先攒点钱、先看看再说”，只用了一代人的时间。过去婚育更像人生流程图里的默认节点，现在越来越像一道需要反复比较收益、成本与风险的综合题。说得通俗一点，爱情还没开始，很多人心里的 Excel 成本表已经先打开了；不是不向往亲密关系，而是越来越难轻松地相信，自己能顺利通关这套现实副本。更深一层看，消失的并不只是新娘和婴儿，而是那种“生活会自然往前走”的朴素确信。以前觉得日子会推着人往前，现在不少人更像是站在副本入口反复确认：装备够不够、队友靠不靠谱、失败能不能承受。</div>
+<div class="g4" style="margin-top:18px">
+<div class="st" style="border-left-color:var(--red)"><div class="st-v mn" style="color:var(--red)">610.6万</div><div class="st-l">2024年结婚登记</div><div class="st-s">创45年新低</div></div>
+<div class="st" style="border-left-color:var(--emb)"><div class="st-v mn" style="color:var(--emb)">954万</div><div class="st-l">2024年出生人口</div><div class="st-s">较2016年腰斩</div></div>
+<div class="st" style="border-left-color:var(--tea)"><div class="st-v mn" style="color:var(--tea)">-54.7%</div><div class="st-l">结婚登记降幅</div><div class="st-s">2013→2024年</div></div>
+<div class="st" style="border-left-color:var(--blu)"><div class="st-v mn" style="color:var(--blu)">-139万</div><div class="st-l">2024年人口净减</div><div class="st-s">连续三年负增长</div></div>
+</div>
+<p class="txt" style="margin-top:18px">2013年，中国结婚登记达到峰值<strong>1346.9万对</strong>。仅11年后的2024年，这个数字跌至<strong>610.6万对</strong>——<span class="hl hl-r">减少了54.7%</span>，超过一半的婚姻"消失"了。同期，出生人口从2016年的1786万降至2024年的954万，近乎腰斩。中国科学院心理研究所2024年调查显示，<strong>51.8%的大学生认为"拥有婚姻不重要"</strong>，59.4%认为"拥有子女不重要"。这不是一个渐进的变化，而是一场静默的人口坍缩与观念革命。</p>
+</section><section class="sec" id="s12">
+<div class="sec-lb">02 — 现实</div>
+<h2 class="sec-ti">现实：数据可做说明</h2>
+<p class="sec-su">最新人口数据不是为了制造焦虑，而是提醒我们：趋势已经足够清晰，问题需要被更诚实地看见。</p>
+<div class="g4" style="margin-bottom:14px">
+<div class="st" style="border-left-color:var(--red)"><div class="st-v mn" style="color:var(--red)">792万</div><div class="st-l">2025年出生人口</div><div class="st-s">较2024年再降17.0%</div></div>
+<div class="st" style="border-left-color:var(--emb)"><div class="st-v mn" style="color:var(--emb)">1131万</div><div class="st-l">2025年死亡人口</div><div class="st-s">死亡率7.82‰</div></div>
+<div class="st" style="border-left-color:var(--tea)"><div class="st-v mn" style="color:var(--tea)">-339万</div><div class="st-l">2025年人口净减</div><div class="st-s">较2024年扩大2.44倍</div></div>
+<div class="st" style="border-left-color:var(--vio)"><div class="st-v mn" style="color:var(--vio)">23.0%</div><div class="st-l">60岁及以上占比</div><div class="st-s">一年上升1.0个百分点</div></div>
+</div>
+<div class="cht"><div class="cht-h">人口自然变动对照（2024 vs 2025，万人）</div>
+<div class="css-bar">
+<div class="css-bar-row"><span class="css-bar-label">2024出生</span><div class="css-bar-track"><div class="css-bar-fill" data-w="84.4" style="background:var(--tea)"><span class="css-bar-val">954</span></div></div><span class="css-bar-ext">基准年</span></div>
+<div class="css-bar-row"><span class="css-bar-label">2025出生</span><div class="css-bar-track"><div class="css-bar-fill" data-w="70" style="background:var(--red)"><span class="css-bar-val">792</span></div></div><span class="css-bar-ext">-17.0%</span></div>
+<div class="css-bar-row"><span class="css-bar-label">2024死亡</span><div class="css-bar-track"><div class="css-bar-fill" data-w="96.6" style="background:var(--gld)"><span class="css-bar-val">1093</span></div></div><span class="css-bar-ext">7.76‰</span></div>
+<div class="css-bar-row"><span class="css-bar-label">2025死亡</span><div class="css-bar-track"><div class="css-bar-fill" data-w="100" style="background:var(--emb)"><span class="css-bar-val">1131</span></div></div><span class="css-bar-ext">7.82‰</span></div>
+<div class="css-bar-row"><span class="css-bar-label">2024净减</span><div class="css-bar-track"><div class="css-bar-fill" data-w="41" style="background:var(--blu)"><span class="css-bar-val">-139</span></div></div><span class="css-bar-ext">-0.99‰</span></div>
+<div class="css-bar-row"><span class="css-bar-label">2025净减</span><div class="css-bar-track"><div class="css-bar-fill" data-w="100" style="background:var(--vio)"><span class="css-bar-val">-339</span></div></div><span class="css-bar-ext">-2.41‰</span></div>
+</div>
+<div class="cht-f">国家统计局：2025年经济运行发布会（2026-01-19）与统计公报（2026-02-28）[26][27]</div></div>
+<div class="cht" style="margin-top:14px"><div class="cht-h">年龄结构变化（占总人口比重）</div>
+<div class="css-bar">
+<div class="css-bar-row"><span class="css-bar-label">0-15岁(2024)</span><div class="css-bar-track"><div class="css-bar-fill" data-w="74.3" style="background:var(--tea)"><span class="css-bar-val">17.1%</span></div></div><span class="css-bar-ext">↓</span></div>
+<div class="css-bar-row"><span class="css-bar-label">0-15岁(2025)</span><div class="css-bar-track"><div class="css-bar-fill" data-w="71.3" style="background:var(--red)"><span class="css-bar-val">16.4%</span></div></div><span class="css-bar-ext">-0.7pct</span></div>
+<div class="css-bar-row"><span class="css-bar-label">16-59岁(2024)</span><div class="css-bar-track"><div class="css-bar-fill" data-w="100" style="background:var(--blu)"><span class="css-bar-val">60.9%</span></div></div><span class="css-bar-ext">↓</span></div>
+<div class="css-bar-row"><span class="css-bar-label">16-59岁(2025)</span><div class="css-bar-track"><div class="css-bar-fill" data-w="99.5" style="background:var(--emb)"><span class="css-bar-val">60.6%</span></div></div><span class="css-bar-ext">-0.3pct</span></div>
+<div class="css-bar-row"><span class="css-bar-label">60岁+(2024)</span><div class="css-bar-track"><div class="css-bar-fill" data-w="95.7" style="background:var(--gld)"><span class="css-bar-val">22.0%</span></div></div><span class="css-bar-ext">↑</span></div>
+<div class="css-bar-row"><span class="css-bar-label">60岁+(2025)</span><div class="css-bar-track"><div class="css-bar-fill" data-w="100" style="background:var(--vio)"><span class="css-bar-val">23.0%</span></div></div><span class="css-bar-ext">+1.0pct</span></div>
+</div>
+<div class="cht-f">国家统计局《2024/2025年人口数据解读》[26][27]</div></div>
+<div class="cd" style="margin-top:14px">
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🔬 解读：这不是“短期波动”，而是“结构漂移”</h4>
+<div class="sol">出生下降快于死亡变化，意味着总人口收缩的主要驱动力正在从“老龄化存量”转向“新生代流量不足”。</div>
+<div class="sol">0-15岁占比继续下行，意味着未来15-20年的劳动力补给与婚育潜在人口规模将同步走弱。</div>
+<div class="sol">60岁及以上占比一年上升1.0个百分点，抚养结构压力上行速度快于多数政策调整周期。</div>
+<div class="sol">托育供给在改善：2025年每千人口托位数增至4.73，全年新增托位89万个、托育机构约13万个，但与青年家庭的实际养育成本缺口相比仍有距离。[30]</div>
+</div>
+</section><section class="sec" id="s2">
+<div class="sec-lb">03 — 结婚</div>
+<h2 class="sec-ti">结婚：结婚登记为什么断崖式下跌</h2>
+<p class="sec-su">婚姻没有消失，但它已经从“人生默认项”变成了一项高门槛的可选任务。</p>
+<div class="cht"><div class="cht-h">结婚登记数趋势（2013-2024）</div>
+<svg style="max-height:200px" viewbox="0 0 400 180">
+<line stroke="rgba(255,255,255,.06)" stroke-width="1" x1="40" x2="40" y1="10" y2="150"></line>
+<line stroke="rgba(255,255,255,.06)" stroke-width="1" x1="40" x2="390" y1="150" y2="150"></line>
+<line stroke="rgba(255,255,255,.03)" stroke-dasharray="4" stroke-width="1" x1="40" x2="390" y1="50" y2="50"></line>
+<line stroke="rgba(255,255,255,.03)" stroke-dasharray="4" stroke-width="1" x1="40" x2="390" y1="100" y2="100"></line>
+<text fill="#50526a" font-size="8" text-anchor="end" x="36" y="17">1400万</text>
+<text fill="#50526a" font-size="8" text-anchor="end" x="36" y="54">1000万</text>
+<text fill="#50526a" font-size="8" text-anchor="end" x="36" y="104">700万</text>
+<text fill="#50526a" font-size="8" text-anchor="end" x="36" y="154">500万</text>
+<polygon fill="rgba(220,53,69,.08)" points="55,12 80,28 105,41 130,50 155,62 180,73 205,84 230,96 255,112 280,102 305,88 330,100 358,120 358,150 55,150"></polygon>
+<polyline fill="none" points="55,12 80,28 105,41 130,50 155,62 180,73 205,84 230,96 255,112 280,102 305,88 330,100 358,120" stroke="#dc3545" stroke-linejoin="round" stroke-width="2.5"></polyline>
+<circle cx="55" cy="12" fill="#dc3545" r="5" stroke="#0f1019" stroke-width="2"></circle>
+<circle cx="255" cy="112" fill="#dc3545" r="4" stroke="#0f1019" stroke-width="2"></circle>
+<circle cx="305" cy="88" fill="#1a9a8e" r="4" stroke="#0f1019" stroke-width="2"></circle>
+<circle cx="358" cy="120" fill="#e07a2f" r="5" stroke="#0f1019" stroke-width="2"></circle>
+<text fill="#dc3545" font-size="9" font-weight="700" text-anchor="middle" x="55" y="8">1346.9</text>
+<text fill="#dc3545" font-size="8" text-anchor="middle" x="255" y="108">683.5</text>
+<text fill="#1a9a8e" font-size="8" text-anchor="middle" x="305" y="82">768.2</text>
+<text fill="#e07a2f" font-size="9" font-weight="700" text-anchor="middle" x="358" y="134">610.6</text>
+<text fill="#50526a" font-size="8" text-anchor="middle" x="55" y="165">2013</text>
+<text fill="#50526a" font-size="8" text-anchor="middle" x="155" y="165">2017</text>
+<text fill="#50526a" font-size="8" text-anchor="middle" x="255" y="165">2022</text>
+<text fill="#50526a" font-size="8" text-anchor="middle" x="305" y="165">2023</text>
+<text fill="#50526a" font-size="8" text-anchor="middle" x="358" y="165">2024</text>
+</svg>
+<div class="cht-f">2023年短暂回升后2024年再创45年新低 · 民政部数据</div></div>
+<div class="g4" style="margin-top:14px">
+<div class="st" style="border-left-color:var(--red)"><div class="st-v mn" style="color:var(--red)">30.1岁</div><div class="st-l">2023平均初婚年龄</div><div class="st-s">比2010年推迟约6岁</div></div>
+<div class="st" style="border-left-color:var(--emb)"><div class="st-v mn" style="color:var(--emb)">29.97%</div><div class="st-l">30岁人口未婚率</div><div class="st-s">十年翻倍(2013:14.56%)</div></div>
+<div class="st" style="border-left-color:var(--tea)"><div class="st-v mn" style="color:var(--tea)">1752万</div><div class="st-l">20-40岁男多于女</div><div class="st-s">性别比108.9</div></div>
+<div class="st" style="border-left-color:var(--vio)"><div class="st-v mn" style="color:var(--vio)">4.44%</div><div class="st-l">30-49岁女性未婚率</div><div class="st-s">较2000年增5.7倍</div></div>
+</div>
+<div class="cd" style="margin-top:14px">
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">⚠️ 结婚数下降的四重驱动</h4>
+<div class="g2">
+<div class="fc" style="border-top-color:var(--red)"><h4 style="color:var(--red)">适婚人口锐减</h4><p>20-40岁适婚群体从2013年<strong style="color:var(--t0)">4.35亿</strong>降至2023年<strong style="color:var(--t0)">3.71亿</strong>，减少6398万人。80后年均出生2213万，00后仅1631万。</p></div>
+<div class="fc" style="border-top-color:var(--emb)"><h4 style="color:var(--emb)">初婚年龄持续推迟</h4><p>平均初婚年龄从2010年<strong style="color:var(--t0)">24.9岁</strong>升至2023年的<strong style="color:var(--t0)">30.1岁</strong>。高学历化延长在校时间，经济压力推迟婚育节奏。</p></div>
+<div class="fc" style="border-top-color:var(--tea)"><h4 style="color:var(--tea)">性别结构失衡</h4><p>20-40岁男性比女性多<strong style="color:var(--t0)">1752万人</strong>。出生性别比80年代开始偏高(2022年仍111.1)，部分男性陷入"结构性失婚"。</p></div>
+<div class="fc" style="border-top-color:var(--blu)"><h4 style="color:var(--blu)">不婚主义崛起</h4><p>30-49岁女性未婚率从2000年<strong style="color:var(--t0)">0.66%</strong>升至2020年<strong style="color:var(--t0)">4.44%</strong>，增长5.7倍。30岁男性未婚率已达38.87%。</p></div>
+</div></div>
+</section><section class="sec" id="s3">
+<div class="sec-lb">04 — 生育</div>
+<h2 class="sec-ti">生育：低生育不只是“不想生”</h2>
+<p class="sec-su">真正的问题不是“有没有意愿”，而是想生的人能不能把意愿转化为现实。</p>
+<div class="big-n"><div class="mn" style="color:var(--red)">1.05</div><small>近年研究估计中国总和生育率 · 不足更替水平(2.1)的一半 · 全球倒数</small></div>
+<div class="cht"><div class="cht-h">出生人口趋势（2016-2024）</div>
+<svg style="max-height:180px" viewbox="0 0 400 160">
+<line stroke="rgba(255,255,255,.06)" stroke-width="1" x1="40" x2="40" y1="10" y2="130"></line>
+<line stroke="rgba(255,255,255,.06)" stroke-width="1" x1="40" x2="390" y1="130" y2="130"></line>
+<text fill="#50526a" font-size="8" text-anchor="end" x="36" y="20">1800万</text>
+<text fill="#50526a" font-size="8" text-anchor="end" x="36" y="75">1200万</text>
+<text fill="#50526a" font-size="8" text-anchor="end" x="36" y="134">800万</text>
+<polygon fill="rgba(224,122,47,.08)" points="55,12 94,28 133,50 172,72 211,88 250,102 289,115 328,122 367,110 367,130 55,130"></polygon>
+<polyline fill="none" points="55,12 94,28 133,50 172,72 211,88 250,102 289,115 328,122 367,110" stroke="#e07a2f" stroke-linejoin="round" stroke-width="2.5"></polyline>
+<circle cx="55" cy="12" fill="#e07a2f" r="5" stroke="#0f1019" stroke-width="2"></circle>
+<circle cx="328" cy="122" fill="#dc3545" r="4" stroke="#0f1019" stroke-width="2"></circle>
+<circle cx="367" cy="110" fill="#1a9a8e" r="5" stroke="#0f1019" stroke-width="2"></circle>
+<text fill="#e07a2f" font-size="9" font-weight="700" text-anchor="middle" x="55" y="8">1786</text>
+<text fill="#dc3545" font-size="8" text-anchor="middle" x="328" y="136">902</text>
+<text fill="#1a9a8e" font-size="9" font-weight="700" text-anchor="middle" x="367" y="106">954</text>
+<text fill="#50526a" font-size="8" text-anchor="middle" x="55" y="148">2016</text>
+<text fill="#50526a" font-size="8" text-anchor="middle" x="133" y="148">2018</text>
+<text fill="#50526a" font-size="8" text-anchor="middle" x="211" y="148">2020</text>
+<text fill="#50526a" font-size="8" text-anchor="middle" x="289" y="148">2022</text>
+<text fill="#50526a" font-size="8" text-anchor="middle" x="367" y="148">2024</text>
+</svg>
+<div class="cht-f">2024年出生954万 · 较2016年下降46.6% · 国家统计局2026年1月发布：2025年出生792万</div></div>
+<div class="cht" style="margin-top:14px"><div class="cht-h">总和生育率国际对比</div>
+<div class="css-bar">
+<div class="css-bar-row"><span class="css-bar-label">以色列</span><div class="css-bar-track"><div class="css-bar-fill" data-w="100" style="background:var(--tea)"><span class="css-bar-val">3.0</span></div></div></div>
+<div class="css-bar-row"><span class="css-bar-label">更替水平</span><div class="css-bar-track"><div class="css-bar-fill" data-w="70" style="background:rgba(255,255,255,.15)"><span class="css-bar-val">2.1</span></div></div></div>
+<div class="css-bar-row"><span class="css-bar-label">美国</span><div class="css-bar-track"><div class="css-bar-fill" data-w="55" style="background:var(--blu)"><span class="css-bar-val">1.66</span></div></div></div>
+<div class="css-bar-row"><span class="css-bar-label">日本</span><div class="css-bar-track"><div class="css-bar-fill" data-w="43" style="background:var(--gld)"><span class="css-bar-val">1.30</span></div></div></div>
+<div class="css-bar-row"><span class="css-bar-label" style="color:var(--red);font-weight:700">中国</span><div class="css-bar-track"><div class="css-bar-fill" data-w="35" style="background:var(--red)"><span class="css-bar-val">1.05</span></div></div></div>
+<div class="css-bar-row"><span class="css-bar-label">韩国</span><div class="css-bar-track"><div class="css-bar-fill" data-w="24" style="background:var(--vio)"><span class="css-bar-val">0.72</span></div></div></div>
+</div>
+<div class="cht-f">中国总和生育率低于日本 · 仅高于韩国 · 更替水平为2.1</div></div>
+<div class="qt" style="margin-top:14px">低生育并不只是观念变化，更是现实约束的集中显影。不愿找、不愿结、不愿生，往往不是三段彼此无关的情绪，而是一条前后相扣的现实链条：三观错位、收入不稳、住房承压、托育不足、教育内卷、职业焦虑，最后都会汇聚成同一个结论——把生育往后拖，甚至干脆不启动。真正的问题不是有没有生育意愿，而是社会有没有能力把“想生”转化成“敢生、能生、养得起”。换句话说，大家不是不喜欢孩子，而是越来越难负担一整套围绕孩子展开的人生重构。很多人嘴上说“再等等”，心里其实是在问：我真的接得住吗？</div>
+</section><section class="sec" id="s13">
+<div class="sec-lb">05 — 性别结构</div>
+<h2 class="sec-ti">性别结构：谁在承担婚育制度的隐性成本</h2>
+<p class="sec-su">婚育表面上是双人选择，实际承担的风险与代价却往往并不对称。</p>
+<div class="g4" style="margin-bottom:14px">
+<div class="st" style="border-left-color:var(--red)"><div class="st-v mn" style="color:var(--red)">59.6%</div><div class="st-l">女性劳动参与率</div><div class="st-s">男性71.1%</div></div>
+<div class="st" style="border-left-color:var(--emb)"><div class="st-v mn" style="color:var(--emb)">15.3%</div><div class="st-l">女性无偿家务占全天</div><div class="st-s">男性仅5.9%</div></div>
+<div class="st" style="border-left-color:var(--tea)"><div class="st-v mn" style="color:var(--tea)">26.5%</div><div class="st-l">女性议员占比</div><div class="st-s">接近世界均值27.0%</div></div>
+<div class="st" style="border-left-color:var(--vio)"><div class="st-v mn" style="color:var(--vio)">8.33%</div><div class="st-l">女性部长占比</div><div class="st-s">显著低于全球22.9%</div></div>
+</div>
+<div class="cht"><div class="cht-h">无偿照料劳动的性别落差（占24小时比例）</div>
+<div class="css-bar">
+<div class="css-bar-row"><span class="css-bar-label" style="color:var(--red);font-weight:700">女性</span><div class="css-bar-track"><div class="css-bar-fill" data-w="100" style="background:var(--red)"><span class="css-bar-val">15.3%</span></div></div><span class="css-bar-ext">约3.67小时/天</span></div>
+<div class="css-bar-row"><span class="css-bar-label">男性</span><div class="css-bar-track"><div class="css-bar-fill" data-w="38.6" style="background:var(--blu)"><span class="css-bar-val">5.9%</span></div></div><span class="css-bar-ext">约1.42小时/天</span></div>
+</div>
+<div class="cht-f">World Bank China Gender Data Landscape (Fall 2025): 女性无偿照料时长约为男性2.6倍 [31]</div></div>
+<div class="cht" style="margin-top:14px"><div class="cht-h">2025年性别差距四维得分（WEF，满分100）</div>
+<div class="css-bar">
+<div class="css-bar-row"><span class="css-bar-label">教育机会</span><div class="css-bar-track"><div class="css-bar-fill" data-w="99.8" style="background:var(--tea)"><span class="css-bar-val">99.8</span></div></div><span class="css-bar-ext">接近平等</span></div>
+<div class="css-bar-row"><span class="css-bar-label">健康生存</span><div class="css-bar-track"><div class="css-bar-fill" data-w="94.7" style="background:var(--gld)"><span class="css-bar-val">94.7</span></div></div><span class="css-bar-ext">持续改善</span></div>
+<div class="css-bar-row"><span class="css-bar-label">经济参与</span><div class="css-bar-track"><div class="css-bar-fill" data-w="74.9" style="background:var(--emb)"><span class="css-bar-val">74.9</span></div></div><span class="css-bar-ext">中等偏低</span></div>
+<div class="css-bar-row"><span class="css-bar-label">政治赋权</span><div class="css-bar-track"><div class="css-bar-fill" data-w="17.2" style="background:var(--vio)"><span class="css-bar-val">17.2</span></div></div><span class="css-bar-ext">主要短板</span></div>
+</div>
+<div class="cht-f">WEF《Global Gender Gap Report 2025》：中国总排名103，得分68.6 [32]</div></div>
+<div class="cht" style="margin-top:14px"><div class="cht-h">决策层代表性：中国与世界对照</div>
+<div class="css-bar">
+<div class="css-bar-row"><span class="css-bar-label">女性议员-中国</span><div class="css-bar-track"><div class="css-bar-fill" data-w="98.1" style="background:var(--red)"><span class="css-bar-val">26.5%</span></div></div><span class="css-bar-ext">世界27.0%</span></div>
+<div class="css-bar-row"><span class="css-bar-label">女性部长-中国</span><div class="css-bar-track"><div class="css-bar-fill" data-w="36.4" style="background:var(--red)"><span class="css-bar-val">8.33%</span></div></div><span class="css-bar-ext">世界22.9%</span></div>
+<div class="css-bar-row"><span class="css-bar-label">女性管理者-中国</span><div class="css-bar-track"><div class="css-bar-fill" data-w="39" style="background:var(--tea)"><span class="css-bar-val">39.0%</span></div></div><span class="css-bar-ext">劳动力向上通道</span></div>
+</div>
+<div class="cht-f">World Bank Gender Data Landscape (2025) [31]</div></div>
+<div class="cd" style="margin-top:14px">
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🧭 女性主义政策框架：把“私人成本”转化为“社会投资”</h4>
+<div class="sol">从“鼓励生育”转向“生育正义”：重点不是口号，而是降低女性在生育后的收入损失与职业中断概率。</div>
+<div class="sol">以托育公共化替代家庭私有化：托位从“有没有”转向“可负担、可及、可持续”。</div>
+<div class="sol">从“母职惩罚”转向“父职共担”：建立可强制使用的父亲育儿假和灵活工时，避免照料义务单边落在女性身上。</div>
+<div class="sol">从“家庭内部协商”转向“制度外部托底”：住房、税收、就业反歧视与照料服务协同，才能真正改变婚育预期。</div>
+</div>
+<div class="qt" style="margin-top:14px">当“生不生”被说成私人选择时，很多隐性成本其实并没有被平均分摊。身体负担、职业中断、无偿照料、情绪劳动，往往更集中地落在女性身上。表面上像双人游戏，现实里却常常出现“一个人开团、一个人观战”的错位。把这一章放到前面，不是为了制造对立，而是为了把账算清：婚育之所以越来越难，不只是总成本高，更在于成本分配并不对称。真正让人退却的，往往不是一次性的疼，而是长期、细碎、默认由某一方兜底的消耗。很多关系最后不是败给某个大事件，而是被那些“算了我来吧”的小事一点点磨薄。</div>
+</section><section class="sec" id="s4">
+<div class="sec-lb">06 — 彩礼</div>
+<h2 class="sec-ti">彩礼：为什么越来越像一场交易</h2>
+<p class="sec-su">彩礼不只是“礼”，很多时候也是信任不足时被货币化的安全感。</p>
+<div class="big-n"><div class="mn" style="color:var(--emb)">12.27万</div><small>2024年全国彩礼平均值 · 近八成家乡有彩礼习俗 · 江西/福建/天津排名前三</small></div>
+<div class="cht"><div class="cht-h">各省彩礼金额排名（综合数据）</div>
+<div class="css-bar">
+<div class="css-bar-row"><span class="css-bar-label" style="color:var(--red);font-weight:700">江西</span><div class="css-bar-track"><div class="css-bar-fill" data-w="100" style="background:var(--red)"><span class="css-bar-val">25-38万+</span></div></div><span class="css-bar-ext">+房+车</span></div>
+<div class="css-bar-row"><span class="css-bar-label">福建</span><div class="css-bar-track"><div class="css-bar-fill" data-w="90" style="background:var(--red)"><span class="css-bar-val">19-30万</span></div></div><span class="css-bar-ext">+房</span></div>
+<div class="css-bar-row"><span class="css-bar-label">浙江</span><div class="css-bar-track"><div class="css-bar-fill" data-w="73" style="background:var(--emb)"><span class="css-bar-val">20-25万</span></div></div><span class="css-bar-ext">+房</span></div>
+<div class="css-bar-row"><span class="css-bar-label">黑龙江</span><div class="css-bar-track"><div class="css-bar-fill" data-w="60" style="background:var(--emb)"><span class="css-bar-val">17-20万</span></div></div><span class="css-bar-ext"> </span></div>
+<div class="css-bar-row"><span class="css-bar-label">天津</span><div class="css-bar-track"><div class="css-bar-fill" data-w="60" style="background:var(--emb)"><span class="css-bar-val">20-25万</span></div></div><span class="css-bar-ext">无房翻倍</span></div>
+<div class="css-bar-row"><span class="css-bar-label">江苏</span><div class="css-bar-track"><div class="css-bar-fill" data-w="55" style="background:var(--gld)"><span class="css-bar-val">18-22万</span></div></div><span class="css-bar-ext">+房+车</span></div>
+<div class="css-bar-row"><span class="css-bar-label">河北</span><div class="css-bar-track"><div class="css-bar-fill" data-w="50" style="background:var(--gld)"><span class="css-bar-val">15万+</span></div></div><span class="css-bar-ext">+房+车+三金</span></div>
+<div class="css-bar-row"><span class="css-bar-label">广东</span><div class="css-bar-track"><div class="css-bar-fill" data-w="25" style="background:var(--tea)"><span class="css-bar-val">5-8万</span></div></div><span class="css-bar-ext"> </span></div>
+<div class="css-bar-row"><span class="css-bar-label">重庆</span><div class="css-bar-track"><div class="css-bar-fill" data-w="15" style="background:var(--tea)"><span class="css-bar-val">0-1万</span></div></div><span class="css-bar-ext"> </span></div>
+</div>
+<div class="cht-f">综合他趣2024彩礼报告、时代数据、婚礼纪等来源</div></div>
+<div class="cd" style="margin-top:14px">
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">💰 一场婚姻的总成本账</h4>
+<p class="txt" style="margin-bottom:12px">很多人一提彩礼就容易滑向简单批判，但现实比“贵不贵”复杂得多。彩礼之所以越来越硬，不只是习俗残留，也和城乡流动、婚配市场、家庭博弈以及对未来风险的焦虑有关。某种意义上，它很多时候并不是爱情的价格，而是在信任不足、保障不足时，被货币化的安全感。爱情本来应该是“我愿意”，但现实常常会追问一句：“那你的配置拉满了吗？”从这个角度看，彩礼不是单纯的旧习俗，而像是制度空白被家庭协商强行顶上的一种临时补丁。经济不发达地区彩礼较高，也并不只是“谁更势利”，背后往往连着资源稀缺、婚配竞争与家庭安全感不足的复杂现实。</p>
+<div class="cost-stack">
+<div class="cost-item"><span class="cost-label">彩礼</span><div class="cost-bar" style="background:var(--red);width:18%">12万</div><span class="cost-val">10-20万</span></div>
+<div class="cost-item"><span class="cost-label">婚房(首付)</span><div class="cost-bar" style="background:var(--emb);width:45%">30万</div><span class="cost-val">20-60万</span></div>
+<div class="cost-item"><span class="cost-label">装修</span><div class="cost-bar" style="background:var(--gld);width:22%">15万</div><span class="cost-val">10-25万</span></div>
+<div class="cost-item"><span class="cost-label">婚车</span><div class="cost-bar" style="background:var(--blu);width:18%">12万</div><span class="cost-val">8-20万</span></div>
+<div class="cost-item"><span class="cost-label">婚礼+酒席</span><div class="cost-bar" style="background:var(--tea);width:15%">10万</div><span class="cost-val">5-20万</span></div>
+<div class="cost-item"><span class="cost-label">三金/五金</span><div class="cost-bar" style="background:var(--vio);width:8%">3万</div><span class="cost-val">2-5万</span></div>
+</div>
+<p class="txt" style="margin-top:8px"><span class="hl hl-r">合计：70-150万</span>。一线城市加上房价则动辄<strong>200-500万</strong>。许多男青年家庭需要举全家之力、背负沉重债务才能完成一场婚礼。</p>
+</div>
+<div class="cd" style="margin-top:14px">
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">⚡ 彩礼的性别分歧</h4>
+<div class="vs-row">
+<div class="vs-box"><h5 style="color:var(--red)">👨 男方视角</h5><p><strong>39.44%</strong>认为5-10万合理<br/><strong>29.21%</strong>认为5万以内<br/><strong>33.23%</strong>认为只是风俗/压力<br/><strong>21.76%</strong>承认为了面子</p></div>
+<div class="vs-box b"><h5 style="color:var(--tea)">👩 女方视角</h5><p><strong>44.85%</strong>认为10-20万合理<br/><strong>54.93%</strong>认为是承诺与责任<br/>仅<strong>2.84%</strong>是为面子攀比<br/><strong>15.9%</strong>认为是养育补偿</p></div>
+</div>
+<p class="txt" style="margin-top:10px"><span class="hl hl-r">75.37%</span>的人有过"因彩礼谈崩而分手"的经历（自己或身边人）。仅<strong>6.6%</strong>的男性和<strong>4.49%</strong>的女性认为不需要彩礼。当"爱情"必须通过"价格"来证明，很多感情在金钱面前碎了一地。</p>
+</div>
+<div class="phi" style="margin-top:14px"><h4>📜 民间婚嫁暗语</h4><p>"<strong>万紫千红一片绿</strong>"——1万张5元+1000张100元+若干50元 ≈ 15万元现金。"<strong>一动不动</strong>"——一辆车+一套房。"<strong>三斤三两</strong>"——百元钞称重约13万。"<strong>万里挑一</strong>"——结婚当天男方给10001元过门钱。2024年最高法院出台彩礼纠纷新规，中央一号文件连续多年点名"高价彩礼"，但移风易俗仍任重道远。</p></div>
+</section><section class="sec" id="s5">
+<div class="sec-lb">07 — 房价</div>
+<h2 class="sec-ti">房价：房子如何变成婚育的闸门</h2>
+<p class="sec-su">住房早已不只是居住问题，它在很多地方仍然是婚姻与家庭组建的入场券。</p>
+<div class="cht"><div class="cht-h">各线城市房价收入比（2024）</div>
+<div class="css-bar">
+<div class="css-bar-row"><span class="css-bar-label" style="color:var(--red);font-weight:700">一线城市</span><div class="css-bar-track"><div class="css-bar-fill" data-w="100" style="background:var(--red)"><span class="css-bar-val">26.1</span></div></div></div>
+<div class="css-bar-row"><span class="css-bar-label">二线城市</span><div class="css-bar-track"><div class="css-bar-fill" data-w="41" style="background:var(--emb)"><span class="css-bar-val">10.8</span></div></div></div>
+<div class="css-bar-row"><span class="css-bar-label">三四线</span><div class="css-bar-track"><div class="css-bar-fill" data-w="29" style="background:var(--gld)"><span class="css-bar-val">7.6</span></div></div></div>
+<div class="css-bar-row"><span class="css-bar-label" style="color:var(--tea)">国际合理</span><div class="css-bar-track"><div class="css-bar-fill" data-w="18" style="background:var(--tea)"><span class="css-bar-val">3-6</span></div></div></div>
+</div>
+<div class="cht-f">麟评居住大数据研究院 · 国际合理区间3-6倍</div></div>
+<div class="g2" style="margin-top:14px">
+<div class="cd"><h4 style="font-size:14px;font-weight:700;color:var(--red);margin-bottom:10px">🏠 买房之重</h4>
+<div class="sol">居民房产占家庭总资产<strong>66%</strong></div>
+<div class="sol">北京80%新购房者依赖家庭资助</div>
+<div class="sol">深圳65%年轻人选择租房</div>
+<div class="sol">83.4%农村地区结婚须在城里买房</div>
+<div class="sol">25-35岁青年仅37%将买房列为五年规划</div>
+<div class="sol">居民杠杆率63%，偏高位运行</div></div>
+<div class="cd"><h4 style="font-size:14px;font-weight:700;color:var(--tea);margin-bottom:10px">📉 房价在调整中</h4>
+<div class="sol">百城房价收入比连降5年，2024年为10.3</div>
+<div class="sol">一线城市降幅最明显(↓8.5%)</div>
+<div class="sol">北京年轻人开始"抄底"老破小</div>
+<div class="sol">总价300万的朝阳老小区成新选择</div>
+<div class="sol">但购房信心仍低——仅9.1%居民预期房价上涨</div>
+<div class="sol">"拒绝30年房贷"成90后/00后的选择</div></div>
+</div>
+</section><section class="sec" id="s6">
+<div class="sec-lb">08 — 养育</div>
+<h2 class="sec-ti">养育：为什么中国孩子“太贵了”</h2>
+<p class="sec-su">贵的不只是奶粉和学费，更是时间、机会与对“不能输”的长期焦虑。</p>
+<div class="big-n"><div class="mn" style="color:var(--emb)">53.8万</div><small>全国0-17岁养育成本均值 · 养到大学毕业约68万 · 上海超101万</small></div>
+<div class="cht"><div class="cht-h">养育成本/人均GDP倍数 · 国际对比</div>
+<div class="css-bar">
+<div class="css-bar-row"><span class="css-bar-label" style="color:var(--red);font-weight:700">中国</span><div class="css-bar-track"><div class="css-bar-fill" data-w="100" style="background:var(--red)"><span class="css-bar-val">6.3倍</span></div></div></div>
+<div class="css-bar-row"><span class="css-bar-label">日本</span><div class="css-bar-track"><div class="css-bar-fill" data-w="68" style="background:var(--gld)"><span class="css-bar-val">4.26倍</span></div></div></div>
+<div class="css-bar-row"><span class="css-bar-label">美国</span><div class="css-bar-track"><div class="css-bar-fill" data-w="65" style="background:var(--blu)"><span class="css-bar-val">4.11倍</span></div></div></div>
+<div class="css-bar-row"><span class="css-bar-label">德国</span><div class="css-bar-track"><div class="css-bar-fill" data-w="58" style="background:var(--tea)"><span class="css-bar-val">3.64倍</span></div></div></div>
+<div class="css-bar-row"><span class="css-bar-label">法国</span><div class="css-bar-track"><div class="css-bar-fill" data-w="36" style="background:var(--tea)"><span class="css-bar-val">2.24倍</span></div></div></div>
+<div class="css-bar-row"><span class="css-bar-label">澳大利亚</span><div class="css-bar-track"><div class="css-bar-fill" data-w="33" style="background:var(--tea)"><span class="css-bar-val">2.08倍</span></div></div></div>
+</div>
+<div class="cht-f">育娲人口研究《中国生育成本报告2024》</div></div>
+<div class="cd" style="margin-top:14px">
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">💰 养育的隐性代价</h4>
+<div class="g2">
+<div class="fc" style="border-top-color:var(--red)"><h4 style="color:var(--red)">财务成本</h4><p>上海<strong style="color:var(--t0)">101万</strong>、北京93.6万、浙江85.5万。城镇均值66.7万，农村36.5万。整体较2022版上涨<strong style="color:var(--t0)">10.9%</strong>。</p></div>
+<div class="fc" style="border-top-color:var(--emb)"><h4 style="color:var(--emb)">女性代价</h4><p>养育0-4岁孩子的母亲减少有报酬工作<strong style="color:var(--t0)">2106小时</strong>。每生一孩，女性工资率下降<strong style="color:var(--t0)">12-17%</strong>。</p></div>
+<div class="fc" style="border-top-color:var(--tea)"><h4 style="color:var(--tea)">托育缺失</h4><p>"没人带孩子"是不生育第三大原因(33.2%)。3岁以下托育覆盖率仅约<strong style="color:var(--t0)">5.5%</strong>，远低于OECD均值35%。</p></div>
+<div class="fc" style="border-top-color:var(--blu)"><h4 style="color:var(--blu)">教育内卷</h4><p>小学生家长每周辅导作业<strong style="color:var(--t0)">5.88小时</strong>(较2010年+60%)。"双减"后，焦虑从学科转向素质教育。</p></div>
+</div></div>
+<div class="qt" style="margin-top:14px">现代家庭对孩子的投入，已经不只是“养大”，而是“尽量别让他掉队”。直接花费、教育支出、照护时间、职业机会成本，再加上长期心理负担，共同构成了今天的养育压力。很多父母不是不爱孩子，而是太清楚开启这一局之后，几乎没有存档点。养娃这件事，在不少家庭里已经不只是幸福工程，也越来越像一场持续十几年、没有暂停键的开放世界生存游戏。真正让人疲惫的，不只是花钱本身，而是那种“一旦开始，就要一直高强度在线”的生活状态。你以为自己是在养娃，很多时候更像是在同时兼任司机、助教、心理咨询师和项目经理。</div>
+</section><section class="sec" id="s7">
+<div class="sec-lb">09 — 就业</div>
+<h2 class="sec-ti">就业：收入、时间与预期为何一起失稳</h2>
+<p class="sec-su">年轻人不只是缺钱，更是缺一种“明年会比今年更稳一点”的把握。</p>
+<div class="g4" style="margin-bottom:14px">
+<div class="st" style="border-left-color:var(--red)"><div class="st-v mn" style="color:var(--red)">16.1%</div><div class="st-l">青年失业率</div><div class="st-s">16-24岁(不含在校)</div></div>
+<div class="st" style="border-left-color:var(--emb)"><div class="st-v mn" style="color:var(--emb)">1187万</div><div class="st-l">2025高校毕业生</div><div class="st-s">再创历史新高</div></div>
+<div class="st" style="border-left-color:var(--tea)"><div class="st-v mn" style="color:var(--tea)">4.12万</div><div class="st-l">人均可支配收入</div><div class="st-s">月均约3433元(2024)</div></div>
+<div class="st" style="border-left-color:var(--blu)"><div class="st-v mn" style="color:var(--blu)">63%</div><div class="st-l">居民杠杆率</div><div class="st-s">负债/GDP偏高位</div></div>
+</div>
+<div class="cd">
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🔄 就业与婚育的恶性循环</h4>
+<div class="sol">就业压力→推迟结婚→推迟生育→生育窗口缩窄</div>
+<div class="sol">收入焦虑→不敢生育→劳动力减少→经济放缓→收入更低</div>
+<div class="sol">女性职场歧视→"母职惩罚"→女性不愿生→人口下降</div>
+<div class="sol">高房价→延迟买房→延迟结婚→延迟生育→错过最佳生育期</div>
+</div>
+<div class="phi" style="margin-top:14px"><h4>💡 "母职惩罚"的量化</h4><p>中国女性劳动参与率约<strong>61%</strong>，远高于全球均值52.6%。但生育后——延长产假成本由企业承担，导致企业回避招聘育龄女性；每生一孩工资率下降12-17%；闲暇时间周均减少12.6小时。在中科院调查中，认为婚姻不重要的<strong>女大学生占比比男生高出37.6个百分点</strong>。<strong>当"做母亲"意味着"职业生涯中断"，越来越多女性选择不生。</strong></p></div>
+</section><section class="sec" id="s8">
+<div class="sec-lb">10 — 爱情观</div>
+<h2 class="sec-ti">爱情观：爱与责任</h2>
+<p class="sec-su">当“纯爱”越来越像一种稀缺想象，爱情本身也在成本、风险与责任之间被重新定义。</p>
+<div class="g4" style="margin-bottom:14px">
+<div class="st" style="border-left-color:var(--red)"><div class="st-v mn" style="color:var(--red)">66%</div><div class="st-l">不愿因压力降低标准</div><div class="st-s">拒绝"将就婚恋"</div></div>
+<div class="st" style="border-left-color:var(--emb)"><div class="st-v mn" style="color:var(--emb)">51.8%</div><div class="st-l">大学生：婚姻不重要</div><div class="st-s">女性比例更高</div></div>
+<div class="st" style="border-left-color:var(--tea)"><div class="st-v mn" style="color:var(--tea)">50%</div><div class="st-l">因"交友圈窄"难脱单</div><div class="st-s">圈层固化严重</div></div>
+<div class="st" style="border-left-color:var(--vio)"><div class="st-v mn" style="color:var(--vio)">60%</div><div class="st-l">择偶首要标准：品德</div><div class="st-s">物质权重下降</div></div>
+</div>
+<div class="cd">
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">💔 十年间的婚姻观变迁</h4>
+<div class="vs-row">
+<div class="vs-box"><h5 style="color:var(--red)">2013-2014：自然选择</h5><p>"大部分人总要结婚"是不言自明的。讨论围绕"结婚""孩子""恋爱"。婚姻是人生必经节点。<br/><span class="tag tag-r">结婚是默认项</span><span class="tag tag-e">出轨是主要矛盾</span></p></div>
+<div class="vs-box b"><h5 style="color:var(--tea)">2023-2024：权衡题</h5><p>"是否必须结婚"被越来越多提及。讨论转向婚姻成本、负面事件、家暴。非婚同居成可选项。<br/><span class="tag tag-t">婚姻非必需</span><span class="tag tag-v">家暴受关注</span></p></div>
+</div>
+<p style="font-size:10px;color:var(--t3);margin-top:6px;text-align:center">复旦大学《中国青年网民社会心态调查报告(2014-2024)》· 144.7万条微博数据</p>
+</div>
+<div class="cd" style="margin-top:14px">
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🔍 因为爱情</h4>
+<p class="txt">当代年轻人<strong>六成将"道德品质"列为首要择偶标准</strong>，三观与性格紧随其后，收入、住房等物质因素权重显著下降。"靠婚姻改变命运"的逻辑正在瓦解，亲密关系从"经济共同体"转向"情感关系本质"。</p>
+<p class="txt" style="margin-top:8px">然而，高标准也意味着高门槛：</p>
+<div class="sol" style="margin-top:6px"><strong>五成</strong>单身青年因"交友圈狭窄"难以脱单——工作、社交高度同质化</div>
+<div class="sol"><strong>四成</strong>坚持"不愿将就"——宁可单身也不进入不满意的婚姻</div>
+<div class="sol"><strong>三成</strong>因工作繁忙"无暇恋爱"——996工作制压缩社交时间</div>
+<div class="sol"><strong>63%</strong>的00后反感传统相亲的"强目的性"，更偏好兴趣社交"轻相亲"</div>
+<div class="sol">约<strong>七成</strong>被调查者表示必须找到合适的人才会结婚</div>
+</div>
+<div class="cd" style="margin-top:14px">
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">⚡ 代际、性别、城乡：三重观念断裂</h4>
+<div class="g2">
+<div class="fc" style="border-top-color:var(--red)"><h4 style="color:var(--red)">代际冲突</h4><p>父母："到年纪就该结"<br/>年轻人："婚姻是选择不是义务"<br/>多数00后认为与父辈婚姻观存在根本差异。</p></div>
+<div class="fc" style="border-top-color:var(--emb)"><h4 style="color:var(--emb)">性别分化</h4><p>男性更认同"传宗接代""养儿防老"等传统功能；女性更关注"生育自我体验"。在大学生中，认为婚姻不重要的<strong style="color:var(--t0)">女性比男性高37.6个百分点</strong>。</p></div>
+<div class="fc" style="border-top-color:var(--tea)"><h4 style="color:var(--tea)">城乡差异</h4><p>城市青年更看重"精神契合"和"个人成长"；农村青年面临的婚姻经济门槛更高——房、车、彩礼层层加码，越穷越难结。</p></div>
+<div class="fc" style="border-top-color:var(--vio)"><h4 style="color:var(--vio)">信息茧房</h4><p>社交媒体放大负面婚姻案例(家暴/出轨/家庭矛盾/丧偶式育儿)。恐婚恐育情绪在网络社区中被不断强化与互相印证。</p></div>
+</div></div>
+<div class="qt" style="margin-top:14px">很多关于婚恋的争论，表面上是在讨论爱情，实际上是在讨论认知观念与成本风险。年轻人并没有失去亲密关系需求，只是越来越难接受一段高风险、低保障、责任高度不对称的关系。不是不想爱，而是不愿意为了进入婚姻，先把自己交给一个不确定的系统。说得更有网感一点，不是“恋爱脑没了”，而是在见过太多现实 bug 之后，不再轻易点下“我已阅读并同意”。
+
+这也是为什么“纯爱”会反复成为网络热词。近年网络语境里的“纯爱”，常被用来指一种理想、纯粹、排他、近乎不掺杂现实算计的爱情想象；“纯爱战士”这样的表达，本身就带着一点半认真、半调侃的意味：它一边说明大家仍然向往真诚而专一的关系，一边也暴露出这种向往在现实中越来越像稀缺品。在不少影视与网络讨论里，当出轨、冷暴力、家庭矛盾与责任失衡不断上演时，“纯爱战士应声倒地”才会成为流行表达。它并不只是玩梗，更像一种集体叹息：理想、纯粹、长期而彼此托举的爱情，正在变得越来越难。
+
+但这并不意味着爱情已经消失。更准确地说，是人们对爱情的要求变了：不再只要心动，也要边界、尊重、稳定、共担和兑现。爱当然重要，但爱的另一面是责任；而责任之所以变重，恰恰是因为现实不再默认替你兜底。真正成熟的爱情，不只是情绪高点时的相互吸引，也包括低谷时的彼此担当、长期中的共同成长，以及在复杂现实里仍愿意认真对待对方的能力。</div>
+</section><section class="sec" id="s9">
+<div class="sec-lb">11 — 省份图谱</div>
+<h2 class="sec-ti">省份图谱：一个中国，多个婚育世界</h2>
+<p class="sec-su">中国不是单一婚育市场，而是多个成本结构、文化结构与机会结构叠加的复合空间。</p>
+<div class="cd">
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🗺️ 各省核心指标对比</h4>
+<div style="overflow-x:auto">
+<table class="ptb">
+<tr><th>省份</th><th>结婚特征</th><th>出生率</th><th>彩礼水平</th><th>养育成本</th><th>核心矛盾</th></tr>
+<tr><td class="prov">广东</td><td>结婚总量全国第一(51.2万对)</td><td class="md">8.89‰</td><td class="lo">5-8万(低)</td><td>高</td><td>一人户占33.22%全国第一</td></tr>
+<tr><td class="prov">河南</td><td>结婚数全国第二</td><td>中</td><td class="md">10-15万</td><td>中</td><td>人口大省·传统观念强</td></tr>
+<tr><td class="prov">江西</td><td>彩礼全国最高</td><td>中</td><td class="hi">25-38万+房车</td><td>中低</td><td>"天价彩礼"重灾区</td></tr>
+<tr><td class="prov">上海</td><td>结婚仅9万对(↓14%)</td><td>低</td><td>20万(但重在房)</td><td class="hi">101万/孩</td><td>TFR仅0.74·全国最低</td></tr>
+<tr><td class="prov">北京</td><td>下降明显</td><td>正增长</td><td class="lo">较低(重房产)</td><td class="hi">93.6万/孩</td><td>80%靠家庭资助购房</td></tr>
+<tr><td class="prov">西藏</td><td>结婚率较高</td><td class="lo" style="color:var(--tea)">最高</td><td class="lo">约1万(低)</td><td>低</td><td>传统文化·城镇化低</td></tr>
+<tr><td class="prov">重庆</td><td>结婚数↓20%</td><td>中</td><td class="lo">0-1万(极低)</td><td>中</td><td>少有彩礼传统</td></tr>
+<tr><td class="prov">黑龙江</td><td>人口持续外流</td><td>极低</td><td class="hi">17-20万</td><td>中</td><td>经济下行+高彩礼双杀</td></tr>
+<tr><td class="prov">福建</td><td>沿海习俗浓厚</td><td>中</td><td class="hi">19-30万+房</td><td>高</td><td>"打欠条"分期付彩礼</td></tr>
+</table></div>
+<p style="font-size:10px;color:var(--t3);margin-top:8px">综合民政部、统计局、育娲研究、婚礼纪等多源数据</p>
+</div>
+<div class="cd" style="margin-top:14px">
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🔑 省份差异的三条规律</h4>
+<div class="fc" style="border-top-color:var(--red)"><h4 style="color:var(--red)">规律一：经济不发达地区彩礼较高</h4><p>经济发达地区(广东、重庆)彩礼最低，而经济欠发达的江西、甘肃反而彩礼最高。农村彩礼普遍高于同省城市<strong style="color:var(--t0)">5-20万</strong>。性别比失衡的地区，男方家庭"竞价"抬高彩礼——越穷越结不起婚。</p></div>
+<div class="fc" style="border-top-color:var(--tea);margin-top:8px"><h4 style="color:var(--tea)">规律二：城市越大生育率越低</h4><p>2020年上海TFR仅<strong style="color:var(--t0)">0.74</strong>，北京0.87，全国均值1.3。生育率较高的西藏、贵州、宁夏城镇化率均偏低。出生率与城镇化率几乎呈现<strong>负相关</strong>。但广东是例外：城镇化率75.9%，出生率仍8.89‰——潮汕等地传统生育文化是主因。</p></div>
+<div class="fc" style="border-top-color:var(--emb);margin-top:8px"><h4 style="color:var(--emb)">规律三：人口外流区"婚育塌方"最严重</h4><p>东北三省(黑吉辽)人口持续外流，年轻人流向南方城市，留下的适婚人口更少、性别更失衡、经济更萧条。鹤岗几万元一套房，但没有年轻人愿意留下来。</p></div>
+</div>
+</section><section class="sec" id="s10">
+<div class="sec-lb">12 — 后果</div>
+<h2 class="sec-ti">后果：人口收缩之后，谁来承担未来</h2>
+<p class="sec-su">人口问题最麻烦的地方在于，它往往不是今天立刻出事，而是今天埋因、十年后集中结算。</p>
+<div class="cht"><div class="cht-h">中国人口趋势预测（中等方案 TFR=1.05）</div>
+<svg style="max-height:180px" viewbox="0 0 400 160">
+<line stroke="rgba(255,255,255,.06)" stroke-width="1" x1="45" x2="45" y1="10" y2="130"></line>
+<line stroke="rgba(255,255,255,.06)" stroke-width="1" x1="45" x2="385" y1="130" y2="130"></line>
+<text fill="#50526a" font-size="8" text-anchor="end" x="40" y="20">14亿</text>
+<text fill="#50526a" font-size="8" text-anchor="end" x="40" y="55">12亿</text>
+<text fill="#50526a" font-size="8" text-anchor="end" x="40" y="90">8亿</text>
+<text fill="#50526a" font-size="8" text-anchor="end" x="40" y="125">4亿</text>
+<polygon fill="rgba(220,53,69,.06)" points="55,16 120,20 185,42 250,62 315,90 380,115 380,130 55,130"></polygon>
+<polyline fill="none" points="55,16 120,20 185,42 250,62 315,90 380,115" stroke="#dc3545" stroke-dasharray="8,4" stroke-linejoin="round" stroke-width="2.5"></polyline>
+<circle cx="55" cy="16" fill="#dc3545" r="5" stroke="#0f1019" stroke-width="2"></circle>
+<circle cx="250" cy="62" fill="#dc3545" r="4" stroke="#0f1019" stroke-width="2"></circle>
+<circle cx="380" cy="115" fill="#dc3545" r="5" stroke="#0f1019" stroke-width="2"></circle>
+<text fill="#dc3545" font-size="9" font-weight="700" text-anchor="middle" x="55" y="12">14.1亿</text>
+<text fill="#dc3545" font-size="8" text-anchor="middle" x="250" y="57">11.88亿</text>
+<text fill="#dc3545" font-size="9" font-weight="700" text-anchor="middle" x="380" y="110">4.6亿</text>
+<text fill="#50526a" font-size="8" text-anchor="middle" x="55" y="148">2024</text>
+<text fill="#50526a" font-size="8" text-anchor="middle" x="120" y="148">2035</text>
+<text fill="#50526a" font-size="8" text-anchor="middle" x="250" y="148">2050</text>
+<text fill="#50526a" font-size="8" text-anchor="middle" x="380" y="148">2100</text>
+</svg>
+<div class="cht-f">西南财经大学人口预测 · 极端低方案(TFR=0.72)下2100年仅剩3.2亿</div></div>
+<div class="cd" style="margin-top:14px">
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">⚠️ 少婚少育的六大后果</h4>
+<div class="g2">
+<div class="fc" style="border-top-color:var(--red)"><h4 style="color:var(--red)">①老龄化海啸</h4><p>2024年65岁+人口达<strong style="color:var(--t0)">2.27亿</strong>(15.9%)。2041年起人口年龄中位数将始终超过<strong style="color:var(--t0)">50岁</strong>。养老金缺口将持续扩大，代际赡养比从现在的4:1恶化到2:1。</p></div>
+<div class="fc" style="border-top-color:var(--emb)"><h4 style="color:var(--emb)">②劳动力枯竭</h4><p>80后2.15亿、90后1.78亿、00后1.55亿——每代递减。2050年预计出生人数仅<strong style="color:var(--t0)">640万</strong>。"人口红利"变"人口负债"，制造业/建筑业/服务业将面临持续用工荒。</p></div>
+<div class="fc" style="border-top-color:var(--tea)"><h4 style="color:var(--tea)">③经济增长失速</h4><p>消费市场萎缩、创新活力下降。日本"失去的三十年"前车之鉴。中国可能在"未富先老"的困境中面临更大挑战。房地产、教育等行业规模将持续收缩。</p></div>
+<div class="fc" style="border-top-color:var(--blu)"><h4 style="color:var(--blu)">④城市收缩</h4><p>东北多地已率先体验人口坍缩。鹤岗房价跌至几万一套。2024-2028年总人口净减约4000万，更多三四线城市可能"鹤岗化"。</p></div>
+<div class="fc" style="border-top-color:var(--vio)"><h4 style="color:var(--vio)">⑤社会孤独化</h4><p>广东"一人户"占33.22%居全国第一。老年独居、青年独居同步增长。无子女的老年人将面临养老困境——"谁来照顾最后一代独生子女？"</p></div>
+<div class="fc" style="border-top-color:var(--pnk)"><h4 style="color:var(--pnk)">⑥国际竞争力下降</h4><p>到2050年中国人口远少于印度的15亿，仅比美国多约4000万。劳动力规模优势将大幅收窄。如果创新力不能弥补人口数量的下降，国力将面临根本性挑战。</p></div>
+</div></div>
+<div class="qt" style="margin-top:14px">少婚少育的后果，从来不只是“孩子变少了”这么简单。它会沿着劳动力、养老、财政、教育、房地产和消费结构层层传导，最后反馈到每个人的生活中。人口问题最麻烦的地方在于，它往往不是今天立刻出事，而是今天埋因、十年后集中结算。换句话说，它不是最先痛，却往往最难修。很多社会问题最初看起来都像局部小波动，等真正显影时，常常已经变成整套系统的慢性压力。最值得警惕的不是某一个数字不好看，而是越来越多原本彼此独立的问题，开始在同一方向上共振。</div>
+</section><section class="sec" id="s11">
+<div class="sec-lb">13 — 出路</div>
+<h2 class="sec-ti">出路：什么样的改革才可能真正改变趋势</h2>
+<p class="sec-su">真正有效的政策，不是劝人去生，而是让人相信：生了以后，社会不会把你一个人留在风里。</p>
+<div class="g2" style="margin-top:14px">
+<div class="cd"><h4 style="font-size:14px;font-weight:700;color:var(--red);margin-bottom:10px">🏛️ 需要做什么</h4>
+<div class="sol">全国性现金生育补贴(每孩每月1000-2000元)</div>
+<div class="sol">多孩家庭个税与社保减免</div>
+<div class="sol">扩大保障房供给，多孩家庭购房优惠</div>
+<div class="sol">3岁以下托育覆盖率从5.5%→35%</div>
+<div class="sol">产假成本由社保而非企业承担</div>
+<div class="sol">遏制天价彩礼·推动婚俗改革</div>
+<div class="sol">取消中考/缩短学制·减轻教育内卷</div>
+<div class="sol">保障男性育儿假·推动家务分担</div></div>
+<div class="cd"><h4 style="font-size:14px;font-weight:700;color:var(--tea);margin-bottom:10px">🌏 国际经验</h4>
+<div class="sol">法国：家庭补贴占GDP 3.6%，TFR 1.84</div>
+<div class="sol">瑞典：480天带薪育儿假(父母均可)</div>
+<div class="sol">德国：每孩每月250欧元直到25岁</div>
+<div class="sol">日本：免费学前教育+每月1-1.5万日元</div>
+<div class="sol">以色列：家庭文化+托育体系=TFR 3.0</div>
+<div class="sol">中国目前仅有零星地方补贴</div>
+<div class="sol">山西吕梁：结婚奖1500元</div>
+<div class="sol">山西/甘肃：婚假延长至30天(全国最长)</div></div>
+</div>
+<div class="phi" style="margin-top:14px"><h4>🔮 核心认知</h4><p>低生育率不是一个可以简单"催"出来的问题。研究表明，<strong>即使解决所有现实困难，年轻人的心态已经是"晚婚晚育、少生优生"，生育率仍然会很低</strong>。这是住房、教育、就业、性别平等、社会保障等系统性问题的综合症状，也是一代人观念的根本转变。既需要"真金白银"的制度支持，也需要一个让年轻人感到"生活值得期待、爱情值得追求、婚姻值得信任"的社会环境。</p></div>
+</section><section class="sec" id="s14">
+<div class="sec-lb">14 — 参考文献</div>
+<h2 class="sec-ti">参考文献与数据来源</h2>
+<p class="sec-su"></p>
+<div class="cd"><h4 style="font-size:13px;font-weight:700;margin-bottom:12px">📄 官方统计与政策文件</h4>
+<div class="ref"><b>[1]</b> 民政部.《2024年4季度民政统计数据》.2025.2.8.</div>
+<div class="ref"><b>[2]</b> 国家统计局.《2024年国民经济和社会发展统计公报》.2025.1.</div>
+<div class="ref"><b>[3]</b> 国家统计局.《中国人口和就业统计年鉴2024》.</div>
+<div class="ref"><b>[4]</b> 国家统计局.《第七次全国人口普查》.2021.5.</div>
+<div class="ref"><b>[5]</b> 国家统计局.《中国统计年鉴2023/2025》.</div>
+<div class="ref"><b>[6]</b> 最高人民法院.《关于审理涉彩礼纠纷案件适用法律若干问题的规定》.2024.2.1.</div>
+<div class="ref"><b>[7]</b> 2025年中央一号文件·推进农村高额彩礼综合治理.</div>
+<div class="ref"><b>[26]</b> 国家统计局.《2025年经济发展向新向优 预期目标圆满实现》.2026.1.19.</div>
+<div class="ref"><b>[27]</b> 国家统计局.《2025年国民经济和社会发展统计公报》.2026.2.28.</div>
+<div class="ref"><b>[28]</b> 国家统计局.王萍萍.《2025年人口规模继续减少 人口素质不断提升》.2026.1.17.</div>
+<div class="ref"><b>[29]</b> 中国政府网.《国务院关于修改〈婚姻登记条例〉的决定》.2025.4.9（5月10日起施行）.</div>
+<div class="ref"><b>[30]</b> 国家卫生健康委.《新闻发布会文字实录：介绍时令节气与健康有关情况》.2025.12.26（托位数4.73/千人）.</div>
+</div>
+<div class="cd" style="margin-top:14px"><h4 style="font-size:13px;font-weight:700;margin-bottom:12px">📊 学术研究与专业报告</h4>
+<div class="ref"><b>[8]</b> 育娲人口研究.《中国生育成本报告2024版》.梁建章,黄文政,何亚福.2024.2.</div>
+<div class="ref"><b>[9]</b> 任泽平团队.《中国生育报告2024》.格隆汇.2024.</div>
+<div class="ref"><b>[10]</b> 西南财经大学.《中国2025-2100年人口预测与政策建议》.2025.1.</div>
+<div class="ref"><b>[11]</b> 麟评居住大数据研究院.《百城房价收入比报告2024》.</div>
+<div class="ref"><b>[12]</b> 中科院心理研究所.《2024年成年人与在校大学生婚育观调查报告》.陈祉妍.2025.4.</div>
+<div class="ref"><b>[13]</b> 复旦大学.《中国青年网民社会心态调查报告(2014-2024)》.2025.1.</div>
+<div class="ref"><b>[14]</b> Soul App+上海大学.《2024年青年婚恋观念及趋势调查报告》.2024.7.</div>
+<div class="ref"><b>[15]</b> 他趣.《2024彩礼研究报告》.2024.8.</div>
+<div class="ref"><b>[16]</b> 武汉大学中国乡村治理研究中心.《2023回乡见闻中的乡村图景》.</div>
+<div class="ref"><b>[17]</b> 原国家卫计委.2017年全国生育状况抽样调查.</div>
+<div class="ref"><b>[18]</b> 中国人民大学人口与发展研究中心.李婷.2025.</div>
+<div class="ref"><b>[31]</b> World Bank.《China Gender Data Landscape, Fall 2025 edition》.</div>
+<div class="ref"><b>[32]</b> World Economic Forum.《Global Gender Gap Report 2025》.</div>
+</div>
+<div class="cd" style="margin-top:14px"><h4 style="font-size:13px;font-weight:700;margin-bottom:12px">📰 媒体报道</h4>
+<div class="ref"><b>[19]</b> 澎湃新闻.《2024年结婚登记数再度下探，原因为何？》.2025.2.</div>
+<div class="ref"><b>[20]</b> 财经杂志.《2024年结婚登记数量下探，创45年新低背后》.2025.2.</div>
+<div class="ref"><b>[21]</b> 第一财经.《31省份去年人口出生率数据公布》.2025.</div>
+<div class="ref"><b>[22]</b> 央视网.《2024年全国婚姻登记数据公布》.2025.2.</div>
+<div class="ref"><b>[23]</b> 南方周末.《不谈恋爱不结婚的年轻人，心理健康更差？》.2025.6.</div>
+<div class="ref"><b>[24]</b> 光明网.《邂逅相遇，适我愿兮——青年群体婚恋观的新趋势》.2024.10.</div>
+<div class="ref"><b>[25]</b> 新京报.《结婚最多的地方，根本不用催》.2025.2.</div>
+<div class="ref"><b>[33]</b> 第一财经.《国家统计局：2025年末人口140828万人》.2026.1.17（转引发布会口径）.</div>
+</div>
+<div class="cd" style="margin-top:14px;background:linear-gradient(135deg,rgba(220,53,69,.02),rgba(196,154,60,.02))">
+<p style="font-size:11.5px;color:var(--t2);line-height:2"><strong>声明：</strong>本报告中数据为AI辅助整理与分析，不构成任何建议。主要数据优先采用官方年度公报与国际组织数据库；不同来源间可能存在统计口径差异，部分彩礼与婚恋调查数据为区间估计，实际因地区与样本而异。</p></div>
+</section></div><footer class="footer">
+<p><strong style="color:var(--t2)">不敢婚、不敢生：中国婚育困局</strong><br/>深度数据报告 · 14章 · 33篇参考文献<br/><br/>
+<span style="font-size:9px">版式参考项目：<a href="https://dingchenchen6.github.io/Healthreports/" rel="noopener" target="_blank">dingchenchen6.github.io/Healthreports</a></span><br/>
+<span style="font-size:9px">长按保存 · 转发朋友圈 · 让更多人看见沉默的数据</span></p>
+</footer><div class="share">
+<button class="share-btn share-p" onclick="doShare()">📤 分享到微信</button>
+<button class="share-btn share-s" onclick="doCopy()">🔗 复制链接</button>
+</div><!-- .wrap -->
+<div class="toast" id="toast"></div>
+<script>
+function doShare(){showToast('请点击右上角 ··· 分享到朋友圈或发送给朋友')}
+function doCopy(){var u=location.href;if(navigator.clipboard){navigator.clipboard.writeText(u).then(function(){showToast('✅ 链接已复制')})}else{var t=document.createElement('textarea');t.value=u;document.body.appendChild(t);t.select();document.execCommand('copy');document.body.removeChild(t);showToast('✅ 链接已复制')}}
+function showToast(m){var t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(function(){t.classList.remove('show')},2200)}
+var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');e.target.querySelectorAll('.pr-fill,.css-bar-fill').forEach(function(b){if(b.dataset.w)b.style.width=b.dataset.w+'%'})}})},{threshold:.06});
+document.querySelectorAll('.sec').forEach(function(s){obs.observe(s)});
+var navAs=document.querySelectorAll('.nav a'),secs=document.querySelectorAll('.sec');
+window.addEventListener('scroll',function(){var cur='';secs.forEach(function(s){if(scrollY>=s.offsetTop-120)cur=s.id});navAs.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+cur)});});
+setTimeout(function(){document.querySelectorAll('.css-bar-fill,.pr-fill').forEach(function(b){if(b.dataset.w)b.style.width=b.dataset.w+'%'});},500);
+</script>
+<button aria-label="返回顶部" id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" type="button">⬆︎ 返回顶部</button>
+<script>
+(function(){
+  var btn=document.getElementById('toTop');
+  if(!btn)return;
+  window.addEventListener('scroll',function(){btn.style.display=(window.scrollY>600)?'flex':'none'},{passive:true});
+})();
+</script>
+</body>
+</html>
