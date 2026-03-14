@@ -23,7 +23,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 /* HERO */
 .hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 24px 80px;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 25% 35%,rgba(220,53,69,.06) 0%,transparent 70%),radial-gradient(ellipse 50% 60% at 75% 65%,rgba(26,154,142,.04) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 50% 90%,rgba(224,122,47,.03) 0%,transparent 70%)}
-.hero-tag{display:inline-block;padding:4px 20px;border:1px solid var(--bd2);border-radius:100px;font-size:10px;letter-spacing:6px;color:var(--t3);margin-bottom:32px;animation:ri .7s ease both}
+.hero-tag{display:inline-block;padding:4px 20px;border:1px solid var(--bd2);border-radius:100px;font-size:11px;letter-spacing:6px;color:var(--t3);margin-bottom:32px;animation:ri .7s ease both}
 .hero h1{font-weight:900;font-size:clamp(26px,6.5vw,52px);line-height:1.2;margin-bottom:16px;animation:ri .7s .08s ease both}
 .hero h1 em{font-style:normal;display:block;background:linear-gradient(135deg,var(--red),var(--emb),var(--gld));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero h1 span{display:block;font-size:.48em;font-weight:400;color:var(--t2);margin-top:8px;-webkit-text-fill-color:var(--t2)}
@@ -32,8 +32,8 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 @media(min-width:560px){.hero-grid{grid-template-columns:repeat(5,1fr);max-width:860px}}
 .hero-cell{text-align:center;padding:14px 8px}
 .hero-cell .mn{font-size:clamp(20px,5vw,30px);font-weight:700;display:block;line-height:1.2}
-.hero-cell small{font-size:10px;color:var(--t3);margin-top:3px;display:block}
-.scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);color:var(--t3);font-size:10px;letter-spacing:4px;animation:bob 2.5s ease-in-out infinite}
+.hero-cell small{font-size:11px;color:var(--t3);margin-top:3px;display:block}
+.scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);color:var(--t3);font-size:11px;letter-spacing:4px;animation:bob 2.5s ease-in-out infinite}
 @keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
 @keyframes ri{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 /* NAV */
@@ -46,7 +46,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .wrap{max-width:860px;margin:0 auto;padding:0 18px}
 .sec{padding:52px 0 56px;border-bottom:1px solid var(--bd);opacity:0;transform:translateY(24px);transition:opacity .55s,transform .55s}
 .sec.vis{opacity:1;transform:translateY(0)}
-.sec-lb{font-size:10px;letter-spacing:4px;color:var(--red);margin-bottom:6px;font-weight:600}
+.sec-lb{font-size:11px;letter-spacing:4px;color:var(--red);margin-bottom:6px;font-weight:600}
 .sec-ti{font-weight:900;font-size:clamp(20px,4.5vw,28px);line-height:1.35;margin-bottom:6px}
 .sec-su{font-size:13px;color:var(--t2);margin-bottom:30px;line-height:1.8}
 .txt{font-size:14px;color:var(--t2);line-height:2}
@@ -55,10 +55,10 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .cd-ac{border-left:4px solid var(--red)}
 .st{background:var(--cd);border-radius:12px;padding:16px;border-left:3px solid var(--red)}
 .st-v{font-size:clamp(18px,4vw,24px);font-weight:700;line-height:1.15;margin-bottom:3px}
-.st-l{font-size:11.5px;font-weight:600;color:var(--t1)}
-.st-s{font-size:9.5px;color:var(--t3);margin-top:2px}
+.st-l{font-size:12.5px;font-weight:600;color:var(--t1)}
+.st-s{font-size:10.5px;color:var(--t3);margin-top:2px}
 .qt{background:linear-gradient(135deg,rgba(220,53,69,.04),rgba(224,122,47,.02));border-left:3px solid var(--red);border-radius:0 12px 12px 0;padding:18px 20px;margin:18px 0;font-size:13px;color:var(--t2);line-height:2}
-.qt .src{display:block;margin-top:6px;font-size:10.5px;color:var(--t3);font-style:italic}
+.qt .src{display:block;margin-top:6px;font-size:11.5px;color:var(--t3);font-style:italic}
 .hl{display:inline;padding:1px 5px;border-radius:3px;font-weight:700;font-size:12.5px}
 .hl-r{background:rgba(220,53,69,.1);color:var(--red)}.hl-e{background:rgba(224,122,47,.1);color:var(--emb)}.hl-t{background:rgba(26,154,142,.1);color:var(--tea)}.hl-b{background:rgba(61,123,184,.1);color:var(--blu)}
 .fc{background:rgba(255,255,255,.012);border-radius:12px;padding:18px;border-top:3px solid var(--red);margin-bottom:10px}
@@ -72,39 +72,39 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 @media(min-width:560px){.g4{grid-template-columns:repeat(4,1fr)}}
 .big-n{text-align:center;padding:24px 16px;margin:16px 0}
 .big-n .mn{font-size:clamp(36px,8vw,56px);font-weight:900;line-height:1;margin-bottom:4px}
-.big-n small{font-size:12px;color:var(--t3)}
+.big-n small{font-size:13px;color:var(--t3)}
 .phi{position:relative;padding:28px 24px;margin:18px 0;border-radius:14px;background:linear-gradient(135deg,rgba(124,58,237,.04),rgba(220,53,69,.03));border:1px solid rgba(124,58,237,.12)}
 .phi h4{font-size:14px;font-weight:700;color:var(--vio);margin-bottom:10px}
 .phi p{font-size:13px;color:var(--t2);line-height:2.1}
-.sol{font-size:12px;color:var(--t2);line-height:2;padding-left:18px;position:relative;margin-bottom:1px}
+.sol{font-size:13px;color:var(--t2);line-height:2;padding-left:18px;position:relative;margin-bottom:1px}
 .sol::before{content:'›';position:absolute;left:3px;font-weight:700;color:var(--red)}
-.ref{font-size:11px;color:var(--t3);line-height:2;padding:6px 0;border-bottom:1px solid var(--bd)}
+.ref{font-size:12px;color:var(--t3);line-height:2;padding:6px 0;border-bottom:1px solid var(--bd)}
 .ref:last-child{border-bottom:none}
 .ref b{color:var(--t2);font-weight:600}
 /* CHART BOX */
 .cht{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:18px;margin-bottom:14px;overflow:hidden}
 .cht-h{font-size:13px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:6px}
 .cht-h::before{content:'';width:3px;height:14px;background:var(--red);border-radius:2px;flex-shrink:0}
-.cht-f{font-size:9.5px;color:var(--t3);margin-top:10px;text-align:center;line-height:1.6}
+.cht-f{font-size:10.5px;color:var(--t3);margin-top:10px;text-align:center;line-height:1.6}
 /* SVG CHART STYLES */
 .cht svg{width:100%;display:block}
-.bar-label{fill:var(--t2);font-size:10px;font-family:inherit}
-.bar-value{fill:var(--t1);font-size:10px;font-family:'SF Mono',Menlo,Consolas,monospace;font-weight:600}
-.axis-label{fill:var(--t3);font-size:9px;font-family:inherit}
+.bar-label{fill:var(--t2);font-size:11px;font-family:inherit}
+.bar-value{fill:var(--t1);font-size:11px;font-family:'SF Mono',Menlo,Consolas,monospace;font-weight:600}
+.axis-label{fill:var(--t3);font-size:10px;font-family:inherit}
 .grid-line{stroke:rgba(255,255,255,.04);stroke-width:1}
 /* CSS BAR CHART */
 .css-bar{margin-bottom:8px}
 .css-bar-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
-.css-bar-label{font-size:11px;color:var(--t2);min-width:70px;text-align:right;flex-shrink:0}
+.css-bar-label{font-size:12px;color:var(--t2);min-width:70px;text-align:right;flex-shrink:0}
 .css-bar-track{flex:1;height:22px;background:rgba(255,255,255,.03);border-radius:4px;overflow:hidden;position:relative}
 .css-bar-fill{height:100%;border-radius:4px;transition:width 1.2s cubic-bezier(.22,1,.36,1);display:flex;align-items:center;justify-content:flex-end;padding-right:6px}
-.css-bar-val{font-size:9px;font-weight:700;color:rgba(255,255,255,.9);white-space:nowrap}
-.css-bar-ext{font-size:11px;color:var(--t1);margin-left:10px;min-width:72px;flex-shrink:0;font-weight:700;opacity:.92}
+.css-bar-val{font-size:10px;font-weight:700;color:rgba(255,255,255,.9);white-space:nowrap}
+.css-bar-ext{font-size:12px;color:var(--t1);margin-left:10px;min-width:72px;flex-shrink:0;font-weight:700;opacity:.92}
 /* DONUT CSS */
 .donut-wrap{display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:center}
 .donut-svg{width:180px;height:180px;flex-shrink:0}
 .donut-legend{display:flex;flex-direction:column;gap:4px}
-.donut-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--t2)}
+.donut-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--t2)}
 .donut-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
 /* PROGRESS BAR (for insurance etc) */
 .pr{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--bd)}
@@ -112,7 +112,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .pr-l{font-size:11.5px;color:var(--t1);min-width:80px;flex-shrink:0}
 .pr-bar{flex:1;height:6px;background:rgba(255,255,255,.04);border-radius:3px;overflow:hidden}
 .pr-fill{height:100%;border-radius:3px;width:0;transition:width 1.4s cubic-bezier(.22,1,.36,1)}
-.pr-v{font-size:11px;font-weight:700;min-width:80px;text-align:right;flex-shrink:0}
+.pr-v{font-size:12px;font-weight:700;min-width:80px;text-align:right;flex-shrink:0}
 /* LINE CHART CSS */
 .line-chart{position:relative;padding:10px 0}
 .line-chart svg{width:100%;overflow:visible}
@@ -129,19 +129,19 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .toast.show{opacity:1;transform:translate(-50%,-50%) scale(1)}
 .toc{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:22px;margin:28px 0}
 .toc-t{font-size:13px;font-weight:700;margin-bottom:12px}
-.toc a{display:block;font-size:12px;color:var(--t2);padding:5px 0;border-bottom:1px solid var(--bd);transition:.2s}
+.toc a{display:block;font-size:13px;color:var(--t2);padding:5px 0;border-bottom:1px solid var(--bd);transition:.2s}
 .toc a:last-child{border-bottom:none}
 .toc a:hover{color:var(--red);padding-left:6px}
 .toc .n{color:var(--red);font-weight:600;margin-right:6px}
 .footer{padding:40px 0 90px;text-align:center}
-.footer p{font-size:10px;color:var(--t3);line-height:2;max-width:700px;margin:0 auto;padding:0 16px}
+.footer p{font-size:11px;color:var(--t3);line-height:2;max-width:700px;margin:0 auto;padding:0 16px}
 @media(max-width:480px){.g2,.g3{grid-template-columns:1fr}.cd{padding:16px}.cht{padding:14px}.sec{padding:36px 0 40px}}
 /* ===== Citation tags / 学术引用角标 ===== */
 .has-cite{position:relative}
-.cite-tag{ position:absolute;top:10px;right:12px; font-size:11px;line-height:1; padding:4px 8px;border-radius:999px; border:1px solid var(--bd2); background:rgba(20,22,30,.55); color:var(--t2); text-decoration:none; backdrop-filter: blur(6px);
+.cite-tag{ position:absolute;top:10px;right:12px; font-size:12px;line-height:1; padding:4px 8px;border-radius:999px; border:1px solid var(--bd2); background:rgba(20,22,30,.55); color:var(--t2); text-decoration:none; backdrop-filter: blur(6px);
 }
 .cite-tag:hover{border-color:rgba(255,255,255,.35);color:var(--t1);transform:translateY(-1px)}
-.cite-inline{font-size:11px;vertical-align:super;margin-left:2px}
+.cite-inline{font-size:12px;vertical-align:super;margin-left:2px}
 .cite-inline a{color:var(--t2);text-decoration:none;border-bottom:1px dotted rgba(255,255,255,.25)}
 .cite-inline a:hover{color:var(--t1);border-bottom-color:rgba(255,255,255,.45)}
 .ref.flash{outline:2px solid rgba(220,53,69,.45);border-radius:10px;padding:10px;background:rgba(220,53,69,.06)}
@@ -161,15 +161,15 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .qrbox{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:22px;flex-wrap:wrap}
 .qrbox img{width:112px;height:112px;border-radius:12px;border:1px solid var(--bd);box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .qrbox .qrcap{max-width:360px;text-align:left}
-.qrbox .qrcap .t{font-size:12px;font-weight:700;color:var(--t1);margin-bottom:4px}
-.qrbox .qrcap .s{font-size:10.5px;color:var(--t3);line-height:1.7}
-.qrbox .qrcap .lnk{font-size:10.5px;color:var(--tea);word-break:break-all}
+.qrbox .qrcap .t{font-size:13px;font-weight:700;color:var(--t1);margin-bottom:4px}
+.qrbox .qrcap .s{font-size:11.5px;color:var(--t3);line-height:1.7}
+.qrbox .qrcap .lnk{font-size:11.5px;color:var(--tea);word-break:break-all}
 
 
 
 /* Province map table */
-.ptb{width:100%;border-collapse:collapse;font-size:11px;margin:10px 0}
-.ptb th{text-align:left;color:var(--t3);font-weight:600;padding:8px 6px;border-bottom:1px solid var(--bd2);font-size:10px;letter-spacing:1px}
+.ptb{width:100%;border-collapse:collapse;font-size:12px;margin:10px 0}
+.ptb th{text-align:left;color:var(--t3);font-weight:600;padding:8px 6px;border-bottom:1px solid var(--bd2);font-size:11px;letter-spacing:1px}
 .ptb td{padding:7px 6px;border-bottom:1px solid var(--bd);color:var(--t2)}
 .ptb tr:hover td{background:rgba(255,255,255,.02)}
 .ptb .prov{color:var(--t1);font-weight:600}
@@ -177,7 +177,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .ptb .md{color:var(--emb);font-weight:600}
 .ptb .lo{color:var(--tea);font-weight:600}
 /* Tag pills */
-.tag{display:inline-block;padding:2px 10px;border-radius:100px;font-size:10px;font-weight:600;margin:2px}
+.tag{display:inline-block;padding:2px 10px;border-radius:100px;font-size:11px;font-weight:600;margin:2px}
 .tag-r{background:rgba(220,53,69,.12);color:var(--red)}
 .tag-e{background:rgba(224,122,47,.12);color:var(--emb)}
 .tag-t{background:rgba(26,154,142,.12);color:var(--tea)}
@@ -188,25 +188,25 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .vs-box{flex:1;background:rgba(255,255,255,.015);border-radius:10px;padding:14px;border-top:3px solid var(--red)}
 .vs-box.b{border-top-color:var(--tea)}
 .vs-box h5{font-size:12px;font-weight:700;margin-bottom:8px}
-.vs-box p{font-size:11.5px;color:var(--t2);line-height:1.9}
+.vs-box p{font-size:12.5px;color:var(--t2);line-height:1.9}
 @media(max-width:480px){.vs-row{flex-direction:column}}
 /* Cost breakdown stack */
 .cost-stack{display:flex;flex-direction:column;gap:4px;margin:10px 0}
 .cost-item{display:flex;align-items:center;gap:8px}
-.cost-bar{height:20px;border-radius:4px;display:flex;align-items:center;padding:0 8px;font-size:9px;font-weight:700;color:rgba(255,255,255,.9);min-width:40px}
-.cost-label{font-size:11px;color:var(--t2);min-width:70px;text-align:right;flex-shrink:0}
-.cost-val{font-size:11px;color:var(--t1);font-weight:600;margin-left:auto;min-width:60px;text-align:right}
+.cost-bar{height:20px;border-radius:4px;display:flex;align-items:center;padding:0 8px;font-size:10px;font-weight:700;color:rgba(255,255,255,.9);min-width:40px}
+.cost-label{font-size:12px;color:var(--t2);min-width:70px;text-align:right;flex-shrink:0}
+.cost-val{font-size:12px;color:var(--t1);font-weight:600;margin-left:auto;min-width:60px;text-align:right}
 
 /* Research-level visuals */
-.viz-note{font-size:10.5px;color:var(--t3);line-height:1.7}
+.viz-note{font-size:11.5px;color:var(--t3);line-height:1.7}
 .geo-legend{display:flex;gap:8px;justify-content:center;align-items:center;margin-top:8px;flex-wrap:wrap}
-.geo-chip{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--t2)}
+.geo-chip{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--t2)}
 .geo-chip i{display:inline-block;width:12px;height:8px;border-radius:2px}
-.net-lbl{font-size:9px;fill:var(--t2)}
-.node-tag{font-size:8.5px;fill:#fff;font-weight:700}
+.net-lbl{font-size:10px;fill:var(--t2)}
+.node-tag{font-size:9.5px;fill:#fff;font-weight:700}
 .dag-box{fill:rgba(255,255,255,.03);stroke:rgba(255,255,255,.2);stroke-width:1.2;rx:9;ry:9}
-.dag-key{font-size:9px;fill:var(--t2)}
-.dag-title{font-size:9.5px;fill:#fff;font-weight:700}
+.dag-key{font-size:10px;fill:var(--t2)}
+.dag-title{font-size:10.5px;fill:#fff;font-weight:700}
 
 
 
@@ -363,7 +363,7 @@ svg,img{
 <div class="sec-lb">01 — 现象</div>
 <h2 class="sec-ti">现象：消失的爱人</h2>
 <p class="sec-su">从“默认会发生”到“先等等再说”，婚育下行不是一时情绪，而是一种正在成形的社会气候。</p>
-<div class="qt">从“到年龄了自然会结婚生孩子”，到“先工作稳定、先攒点钱、先看看再说”，只用了一代人的时间。过去婚育更像人生流程图里的默认节点，现在越来越像一道需要反复比较收益、成本与风险的综合题。说得通俗一点，爱情还没开始，很多人心里的 Excel 成本表已经先打开了；不是不向往亲密关系，而是越来越难轻松地相信，自己能顺利通关这套现实副本。更深一层看，消失的并不只是新娘和婴儿，而是那种“生活会自然往前走”的朴素确信。以前觉得日子会推着人往前，现在不少人更像是站在副本入口反复确认：装备够不够、队友靠不靠谱、失败能不能承受。</div>
+<div class="qt">从“到年龄了自然会结婚生孩子”，到“先工作稳定、先攒点钱、先看看再说”，只用了一代人的时间。过去婚育更像人生流程图里的默认节点，现在越来越像一道需要反复比较收益、成本与风险的综合题。说得通俗一点，爱情还没开始，很多人心里的 Excel 成本表已经先打开了；不是不向往亲密关系，而是越来越难轻松地相信，自己能顺利通关这套现实副本。更深一层看，消失的并不只是新娘和婴儿，而是那种“生活会自然往前走”的朴素确信。以前觉得日子会推着人往前，现在不少人更像是站在风口反复确认：装备够不够、队友靠不靠谱、失败能不能承受。</div>
 <div class="g4" style="margin-top:18px">
 <div class="st" style="border-left-color:var(--red)"><div class="st-v mn" style="color:var(--red)">610.6万</div><div class="st-l">2024年结婚登记</div><div class="st-s">创45年新低</div></div>
 <div class="st" style="border-left-color:var(--emb)"><div class="st-v mn" style="color:var(--emb)">954万</div><div class="st-l">2024年出生人口</div><div class="st-s">较2016年腰斩</div></div>
@@ -550,7 +550,7 @@ svg,img{
 <div class="cht-f">综合他趣2024彩礼报告、时代数据、婚礼纪等来源</div></div>
 <div class="cd" style="margin-top:14px">
 <h4 style="font-size:14px;font-weight:700;margin-bottom:14px">💰 一场婚姻的总成本账</h4>
-<p class="txt" style="margin-bottom:12px">很多人一提彩礼就容易滑向简单批判，但现实比“贵不贵”复杂得多。彩礼之所以越来越硬，不只是习俗残留，也和城乡流动、婚配市场、家庭博弈以及对未来风险的焦虑有关。某种意义上，它很多时候并不是爱情的价格，而是在信任不足、保障不足时，被货币化的安全感。爱情本来应该是“我愿意”，但现实常常会追问一句：“那你的配置拉满了吗？”从这个角度看，彩礼不是单纯的旧习俗，而像是制度空白被家庭协商强行顶上的一种临时补丁。经济不发达地区彩礼较高，也并不只是“谁更势利”，背后往往连着资源稀缺、婚配竞争与家庭安全感不足的复杂现实。</p>
+<p class="txt" style="margin-bottom:12px">很多人一提彩礼就容易滑向简单批判，但现实比“贵不贵”复杂得多。彩礼之所以越来越贵，不只是习俗残留，也和城乡流动、婚配市场、家庭博弈以及对未来风险的焦虑有关。某种意义上，它很多时候并不是爱情的价格，而是在信任不足、保障不足时，被货币化的安全感。爱情本来应该是“我愿意”，但现实常常会追问一句：“那你的配置拉满了吗？”从这个角度看，彩礼不是单纯的旧习俗，而像是制度空白被家庭协商强行顶上的一种临时补丁。经济不发达地区彩礼较高，也并不只是“谁更势利”，背后往往连着资源稀缺、婚配竞争与家庭安全感不足的复杂现实。</p>
 <div class="cost-stack">
 <div class="cost-item"><span class="cost-label">彩礼</span><div class="cost-bar" style="background:var(--red);width:18%">12万</div><span class="cost-val">10-20万</span></div>
 <div class="cost-item"><span class="cost-label">婚房(首付)</span><div class="cost-bar" style="background:var(--emb);width:45%">30万</div><span class="cost-val">20-60万</span></div>
@@ -643,7 +643,7 @@ svg,img{
 </section><section class="sec" id="s8">
 <div class="sec-lb">10 — 爱情观</div>
 <h2 class="sec-ti">爱情观：爱与责任</h2>
-<p class="sec-su">当“纯爱”越来越像一种稀缺想象，爱情本身也在成本、风险与责任之间被重新定义。</p>
+<p class="sec-su">当“纯爱”越来越像一种稀缺想象，爱情本身也在成本、风险与责任之间被重新定义；而一段关系能否走远，越来越取决于三观（品行）是否同频。</p>
 <div class="g4" style="margin-bottom:14px">
 <div class="st" style="border-left-color:var(--red)"><div class="st-v mn" style="color:var(--red)">66%</div><div class="st-l">不愿因压力降低标准</div><div class="st-s">拒绝"将就婚恋"</div></div>
 <div class="st" style="border-left-color:var(--emb)"><div class="st-v mn" style="color:var(--emb)">51.8%</div><div class="st-l">大学生：婚姻不重要</div><div class="st-s">女性比例更高</div></div>
@@ -656,11 +656,11 @@ svg,img{
 <div class="vs-box"><h5 style="color:var(--red)">2013-2014：自然选择</h5><p>"大部分人总要结婚"是不言自明的。讨论围绕"结婚""孩子""恋爱"。婚姻是人生必经节点。<br/><span class="tag tag-r">结婚是默认项</span><span class="tag tag-e">出轨是主要矛盾</span></p></div>
 <div class="vs-box b"><h5 style="color:var(--tea)">2023-2024：权衡题</h5><p>"是否必须结婚"被越来越多提及。讨论转向婚姻成本、负面事件、家暴。非婚同居成可选项。<br/><span class="tag tag-t">婚姻非必需</span><span class="tag tag-v">家暴受关注</span></p></div>
 </div>
-<p style="font-size:10px;color:var(--t3);margin-top:6px;text-align:center">复旦大学《中国青年网民社会心态调查报告(2014-2024)》· 144.7万条微博数据</p>
+<p style="font-size:11px;color:var(--t3);margin-top:6px;text-align:center">复旦大学《中国青年网民社会心态调查报告(2014-2024)》· 144.7万条微博数据</p>
 </div>
 <div class="cd" style="margin-top:14px">
 <h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🔍 因为爱情</h4>
-<p class="txt">当代年轻人<strong>六成将"道德品质"列为首要择偶标准</strong>，三观与性格紧随其后，收入、住房等物质因素权重显著下降。"靠婚姻改变命运"的逻辑正在瓦解，亲密关系从"经济共同体"转向"情感关系本质"。</p>
+<p class="txt">当代年轻人<strong>六成将"道德品质"列为首要择偶标准</strong>，三观（品行）与性格紧随其后，收入、住房等物质因素权重显著下降。"靠婚姻改变命运"的逻辑正在瓦解，亲密关系从"经济共同体"转向"情感关系本质"。</p>
 <p class="txt" style="margin-top:8px">然而，高标准也意味着高门槛：</p>
 <div class="sol" style="margin-top:6px"><strong>五成</strong>单身青年因"交友圈狭窄"难以脱单——工作、社交高度同质化</div>
 <div class="sol"><strong>四成</strong>坚持"不愿将就"——宁可单身也不进入不满意的婚姻</div>
@@ -677,12 +677,12 @@ svg,img{
 <div class="fc" style="border-top-color:var(--vio)"><h4 style="color:var(--vio)">信息茧房</h4><p>社交媒体放大负面婚姻案例(家暴/出轨/家庭矛盾/丧偶式育儿)。恐婚恐育情绪在网络社区中被不断强化与互相印证。</p></div>
 </div></div>
 <div class="cd" style="margin-top:14px">
-<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">📊 新增研究补充：男生女生找对象标准与关系门槛</h4>
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">📊 男生女生找对象标准与关系门槛</h4>
 <div class="vs-row">
 <div class="vs-box"><h5 style="color:var(--red)">👨 男生侧（趋势）</h5><p>恋爱对象更看重<strong>相处舒适度、外在吸引与情绪反馈</strong>；进入婚姻议题后，三观契合与长期协同权重明显上升。<br/>在“早婚意愿”上，00后男性中约<strong>34%</strong>表达过“希望早婚”的倾向。[38]</p></div>
 <div class="vs-box b"><h5 style="color:var(--tea)">👩 女生侧（趋势）</h5><p>恋爱对象更强调<strong>责任感、稳定性、边界感</strong>；讨论结婚对象时，对经济稳定、发展潜力与家庭风险更敏感。<br/>00后女性“恐婚”比例约<strong>62%</strong>，担忧集中在婚后不确定性与职业影响。[38]</p></div>
 </div>
-<p class="txt" style="margin-top:10px">“恋爱看心动，结婚看系统”已成为越来越多青年的共同叙事。2025年一线城市样本显示：选择恋爱对象时，前列因素是<strong>性格、外貌、三观</strong>；转向结婚对象时，<strong>性格与三观</strong>仍在前列，但<strong>经济条件、发展潜力、家庭背景</strong>权重显著抬升。[37]</p>
+<p class="txt" style="margin-top:10px">“恋爱看心动，结婚看系统”已成为越来越多青年的共同叙事。2025年一线城市样本显示：选择恋爱对象时，前列因素是<strong>三观（品行）、性格、外貌</strong>；转向结婚对象时，<strong>三观（品行）与性格</strong>仍在前列，但<strong>经济条件、发展潜力、家庭背景</strong>权重显著抬升。[37]</p>
 <div class="css-bar" style="margin-top:10px">
 <div class="css-bar-row"><span class="css-bar-label">双方都要主动</span><div class="css-bar-track"><div class="css-bar-fill" data-w="82.3" style="background:var(--red)"><span class="css-bar-val">82.3%</span></div></div><span class="css-bar-ext">合作型亲密关系</span></div>
 <div class="css-bar-row"><span class="css-bar-label">谁先追无所谓</span><div class="css-bar-track"><div class="css-bar-fill" data-w="63.3" style="background:var(--emb)"><span class="css-bar-val">63.3%</span></div></div><span class="css-bar-ext">性别脚本松动</span></div>
@@ -693,7 +693,7 @@ svg,img{
 <div class="cht-f">来源：2025年一线城市青年婚育观全景报告（样本调查口径）[37]；Soul App婚恋调查转引数据[38]</div>
 </div>
 <div class="cd" style="margin-top:14px">
-<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🧠 新增研究补充：当爱情被“可计算化”之后</h4>
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🧠 当爱情被“可计算化”之后</h4>
 <p class="txt">功利主义与消费主义语境下，爱情正在被平台化的比较逻辑重写：学历、收入、房产、身高、情绪价值、家庭背景，被打包成可筛选参数。现实考量并非原罪，但若关系只剩“成本-收益”核算，亲密关系就会退化成一种交易脚本。</p>
 <div class="sol">关系起点更像“尽调”：先评估风险，再给出情感预算，浪漫被风控语言替代。</div>
 <div class="sol">人设、表演、伪装持续增殖：塌房与翻车层出不穷，信任成本显著上升。</div>
@@ -724,7 +724,7 @@ svg,img{
 <tr><td class="prov">黑龙江</td><td>人口持续外流</td><td>极低</td><td class="hi">17-20万</td><td>中</td><td>经济下行+高彩礼双杀</td></tr>
 <tr><td class="prov">福建</td><td>沿海习俗浓厚</td><td>中</td><td class="hi">19-30万+房</td><td>高</td><td>"打欠条"分期付彩礼</td></tr>
 </table></div>
-<p style="font-size:10px;color:var(--t3);margin-top:8px">综合民政部、统计局、育娲研究、婚礼纪等多源数据</p>
+<p style="font-size:11px;color:var(--t3);margin-top:8px">综合民政部、统计局、育娲研究、婚礼纪等多源数据</p>
 </div>
 <div class="cd" style="margin-top:14px">
 <h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🔑 省份差异的三条规律</h4>
@@ -837,7 +837,7 @@ svg,img{
 </section><section class="sec" id="s11">
 <div class="sec-lb">13 — 出路</div>
 <h2 class="sec-ti">出路：什么样的改革才可能真正改变趋势</h2>
-<p class="sec-su">真正有效的政策，不是劝人去生，而是让人相信：生了以后，社会不会把你一个人留在风里。</p>
+<p class="sec-su">真正有效的政策，不是劝人去生，而是让人相信：生了以后，社会不会把你一个人留在风暴里。</p>
 <div class="g2" style="margin-top:14px">
 <div class="cd"><h4 style="font-size:14px;font-weight:700;color:var(--red);margin-bottom:10px">🏛️ 需要做什么</h4>
 <div class="sol">全国性现金生育补贴(每孩每月1000-2000元)</div>
@@ -899,10 +899,17 @@ svg,img{
 </div>
 
 <div class="cd" style="margin-top:14px">
-<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🧪 研究结论（并入政策章节）</h4>
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🧪 研究结论</h4>
 <div class="sol">空间层面：高压力省份呈“资源挤压+婚配竞争”叠加态，婚育决策更晚、更谨慎。</div>
 <div class="sol">网络层面：<strong>初婚年龄推迟</strong>是中介中心节点，解释了多因素如何共同作用到出生下降。</div>
 <div class="sol">机制层面：仅提高现金补贴难以逆转趋势，必须同时降低“时间成本+职业惩罚+住房门槛”。</div>
+</div>
+<div class="cd" style="margin-top:14px">
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🧍 个人层面：在不确定时代守住爱的能力</h4>
+<div class="sol">独立思考：不被“流量婚恋剧本”牵着走，先判断价值观，再判断关系节奏。</div>
+<div class="sol">不被利益绑架：把“三观（品行）一致”放在短期条件之前，避免把亲密关系简化为交易。</div>
+<div class="sol">独立经济能力：建立基本储蓄和风险缓冲，让选择伴侣时更自由、更有底气。</div>
+<div class="sol">识别长期一致性：少看人设表演，多看长期行动和责任兑现，降低“塌房型关系”风险。</div>
 </div>
 
 <div class="phi" style="margin-top:14px"><h4>🔮 核心认知</h4><p>低生育率不是一个可以简单"催"出来的问题。研究表明，<strong>即使解决所有现实困难，年轻人的心态已经是"晚婚晚育、少生优生"，生育率仍然会很低</strong>。这是住房、教育、就业、性别平等、社会保障等系统性问题的综合症状，也是一代人观念的根本转变。既需要"真金白银"的制度支持，也需要一个让年轻人感到"生活值得期待、爱情值得追求、婚姻值得信任"的社会环境。</p></div>
