@@ -56,9 +56,9 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .st{background:var(--cd);border-radius:12px;padding:16px;border-left:3px solid var(--red)}
 .st-v{font-size:clamp(18px,4vw,24px);font-weight:700;line-height:1.15;margin-bottom:3px}
 .st-l{font-size:12.5px;font-weight:600;color:var(--t1)}
-.st-s{font-size:11.5px;color:var(--t3);margin-top:2px}
+.st-s{font-size:12px;color:var(--t3);margin-top:2px}
 .qt{background:linear-gradient(135deg,rgba(220,53,69,.04),rgba(224,122,47,.02));border-left:3px solid var(--red);border-radius:0 12px 12px 0;padding:18px 20px;margin:18px 0;font-size:13px;color:var(--t2);line-height:2}
-.qt .src{display:block;margin-top:6px;font-size:12.5px;color:var(--t3);font-style:italic}
+.qt .src{display:block;margin-top:6px;font-size:13px;color:var(--t3);font-style:italic}
 .hl{display:inline;padding:1px 5px;border-radius:3px;font-weight:700;font-size:12.5px}
 .hl-r{background:rgba(220,53,69,.1);color:var(--red)}.hl-e{background:rgba(224,122,47,.1);color:var(--emb)}.hl-t{background:rgba(26,154,142,.1);color:var(--tea)}.hl-b{background:rgba(61,123,184,.1);color:var(--blu)}
 .fc{background:rgba(255,255,255,.012);border-radius:12px;padding:18px;border-top:3px solid var(--red);margin-bottom:10px}
@@ -85,12 +85,12 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .cht{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:18px;margin-bottom:14px;overflow:hidden}
 .cht-h{font-size:13px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:6px}
 .cht-h::before{content:'';width:3px;height:14px;background:var(--red);border-radius:2px;flex-shrink:0}
-.cht-f{font-size:11.5px;color:var(--t3);margin-top:10px;text-align:center;line-height:1.6}
+.cht-f{font-size:12.5px;color:var(--t3);margin-top:10px;text-align:center;line-height:1.6}
 /* SVG CHART STYLES */
 .cht svg{width:100%;display:block}
 .bar-label{fill:var(--t2);font-size:12px;font-family:inherit}
 .bar-value{fill:var(--t1);font-size:12px;font-family:'SF Mono',Menlo,Consolas,monospace;font-weight:600}
-.axis-label{fill:var(--t3);font-size:11px;font-family:inherit}
+.axis-label{fill:var(--t3);font-size:12px;font-family:inherit}
 .grid-line{stroke:rgba(255,255,255,.04);stroke-width:1}
 /* CSS BAR CHART */
 .css-bar{margin-bottom:8px}
@@ -98,7 +98,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .css-bar-label{font-size:13px;color:var(--t2);min-width:70px;text-align:right;flex-shrink:0}
 .css-bar-track{flex:1;height:22px;background:rgba(255,255,255,.03);border-radius:4px;overflow:hidden;position:relative}
 .css-bar-fill{height:100%;border-radius:4px;transition:width 1.2s cubic-bezier(.22,1,.36,1);display:flex;align-items:center;justify-content:flex-end;padding-right:6px}
-.css-bar-val{font-size:11px;font-weight:700;color:rgba(255,255,255,.9);white-space:nowrap}
+.css-bar-val{font-size:12px;font-weight:700;color:rgba(255,255,255,.9);white-space:nowrap}
 .css-bar-ext{font-size:13px;color:var(--t1);margin-left:10px;min-width:72px;flex-shrink:0;font-weight:700;opacity:.92}
 /* DONUT CSS */
 .donut-wrap{display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:center}
@@ -202,11 +202,11 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .geo-legend{display:flex;gap:8px;justify-content:center;align-items:center;margin-top:8px;flex-wrap:wrap}
 .geo-chip{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--t2)}
 .geo-chip i{display:inline-block;width:12px;height:8px;border-radius:2px}
-.net-lbl{font-size:11px;fill:var(--t2)}
-.node-tag{font-size:10.5px;fill:#fff;font-weight:700}
+.net-lbl{font-size:12px;fill:var(--t2)}
+.node-tag{font-size:11.5px;fill:#fff;font-weight:700}
 .dag-box{fill:rgba(255,255,255,.03);stroke:rgba(255,255,255,.2);stroke-width:1.2;rx:9;ry:9}
-.dag-key{font-size:11px;fill:var(--t2)}
-.dag-title{font-size:11.5px;fill:#fff;font-weight:700}
+.dag-key{font-size:12px;fill:var(--t2)}
+.dag-title{font-size:12.5px;fill:#fff;font-weight:700}
 
 
 
@@ -700,7 +700,7 @@ svg,img{
 </section><section class="sec" id="s8">
 <div class="sec-lb">11 — 爱情观</div>
 <h2 class="sec-ti">爱情观：爱与责任</h2>
-<p class="sec-su">当“纯爱”越来越像一种稀缺想象，爱情本身也在成本、风险与责任之间被重新定义；而一段关系能否走远，越来越取决于三观（品行）是否同频。</p>
+<p class="sec-su">当“纯爱”越来越像一种稀缺想象，人们依然向往那种唯美、浪漫、愿意全情投入的关系；但在现实语境下，爱情也在成本、风险与责任之间被重新定义，而一段关系能否走远，越来越取决于三观（品行）是否同频。</p>
 <div class="g4" style="margin-bottom:14px">
 <div class="st" style="border-left-color:var(--red)"><div class="st-v mn" style="color:var(--red)">66%</div><div class="st-l">不愿因压力降低标准</div><div class="st-s">拒绝"将就婚恋"</div></div>
 <div class="st" style="border-left-color:var(--emb)"><div class="st-v mn" style="color:var(--emb)">51.8%</div><div class="st-l">大学生：婚姻不重要</div><div class="st-s">女性比例更高</div></div>
@@ -754,14 +754,13 @@ svg,img{
 <p class="txt">功利主义与消费主义语境下，爱情正在被平台化的比较逻辑重写：学历、收入、房产、身高、情绪价值、家庭背景，被打包成可筛选参数。现实考量并非原罪，但若关系只剩“成本-收益”核算，亲密关系就会退化成一种交易脚本。</p>
 <div class="sol">关系起点更像“尽调”：先评估风险，再给出情感预算，浪漫被风控语言替代。</div>
 <div class="sol">人设、表演、伪装持续增殖：塌房与翻车层出不穷，信任成本显著上升。</div>
+<div class="sol">现实语境下，人们似乎更清醒了：因为意识到人会变化、感情会波动，不确定性本来就是亲密关系的一部分。</div>
 <div class="sol">年轻人变得更谨慎，不是“不相信爱”，而是“不再轻信看起来像爱的表演”。</div>
 <div class="sol">以前谈恋爱像写诗，现在更像做预算；但如果算过现实后仍愿意共担，反而更接近成熟之爱。</div>
 </div>
-<div class="qt" style="margin-top:14px">很多关于婚恋的争论，表面上是在讨论爱情，实际上是在讨论认知观念与成本风险。年轻人并没有失去亲密关系需求，只是越来越难接受一段高风险、低保障、责任高度不对称的关系。不是不想爱，而是不愿意为了进入婚姻，先把自己交给一个不确定的系统。说得更有网感一点，不是“恋爱脑没了”，而是在见过太多现实 bug 之后，不再轻易点下“我已阅读并同意”。
+<div class="qt" style="margin-top:14px">很多关于爱情的争论，表面上是在讨论感情，实际上是在讨论认知观念与成本风险。现实语境下，人们似乎更清醒了，不是因为不再相信爱，而是因为意识到“人”与“感情”都可能变化，关系里始终存在不确定性。于是大家不愿再把自己轻易交给一个高风险、低保障、责任不对称的系统。
 
-这也是为什么“纯爱”会反复成为网络热词。近年网络语境里的“纯爱”，常被用来指一种理想、纯粹、排他、近乎不掺杂现实算计的爱情想象；“纯爱战士”这样的表达，本身就带着一点半认真、半调侃的意味：它一边说明大家仍然向往真诚而专一的关系，一边也暴露出这种向往在现实中越来越像稀缺品。在不少影视与网络讨论里，当出轨、冷暴力、家庭矛盾与责任失衡不断上演时，“纯爱战士应声倒地”才会成为流行表达。它并不只是玩梗，更像一种集体叹息：理想、纯粹、长期而彼此托举的爱情，正在变得越来越难。
-
-但这并不意味着爱情已经消失。更准确地说，是人们对爱情的要求变了：不再只要心动，也要边界、尊重、稳定、共担和兑现。爱当然重要，但爱的另一面是责任；而责任之所以变重，恰恰是因为现实不再默认替你兜底。真正成熟的爱情，不只是情绪高点时的相互吸引，也包括低谷时的彼此担当、长期中的共同成长，以及在复杂现实里仍愿意认真对待对方的能力。</div>
+这也是为什么“纯爱”会反复成为热词。它承载的从来不只是幻想，而是对唯美、浪漫、全情投入关系的真实向往。但成熟的爱情不只要心动，也要边界、尊重、稳定、共担和兑现；在看清现实之后仍愿意彼此托举，反而更接近长期而有力量的爱。</div>
 </section><section class="sec" id="s10">
 <div class="sec-lb">12 — 后果</div>
 <h2 class="sec-ti">后果：人口收缩之后，谁来承担未来</h2>
@@ -977,8 +976,8 @@ svg,img{
 <p style="font-size:12.5px;color:var(--t2);line-height:2"><strong>声明：</strong>本报告中数据为AI辅助整理与分析，不构成任何建议。主要数据优先采用官方年度公报与国际组织数据库；不同来源间可能存在统计口径差异，部分彩礼与婚恋调查数据为区间估计，实际因地区与样本而异。</p></div>
 </section></div><footer class="footer">
 <p><strong style="color:var(--t2)">不敢爱、不敢婚、不敢生：中国婚育困局</strong><br/>深度数据报告 · 14章 · 38篇参考文献<br/><br/>
-<span style="font-size:10px">版式参考项目：<a href="https://dingchenchen6.github.io/Healthreports/" rel="noopener" target="_blank">dingchenchen6.github.io/Healthreports</a></span><br/>
-<span style="font-size:10px">长按保存 · 转发朋友圈 · 让更多人看见沉默的数据</span></p>
+<span style="font-size:11px">版式参考项目：<a href="https://dingchenchen6.github.io/Healthreports/" rel="noopener" target="_blank">dingchenchen6.github.io/Healthreports</a></span><br/>
+<span style="font-size:11px">长按保存 · 转发朋友圈 · 让更多人看见沉默的数据</span></p>
 </footer><div class="share">
 <button class="share-btn share-p" onclick="doShare()">📤 分享到微信</button>
 <button class="share-btn share-s" onclick="doCopy()">🔗 复制链接</button>
