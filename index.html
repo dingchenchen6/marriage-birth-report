@@ -23,7 +23,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 /* HERO */
 .hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 24px 80px;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 25% 35%,rgba(220,53,69,.06) 0%,transparent 70%),radial-gradient(ellipse 50% 60% at 75% 65%,rgba(26,154,142,.04) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 50% 90%,rgba(224,122,47,.03) 0%,transparent 70%)}
-.hero-tag{display:inline-block;padding:4px 20px;border:1px solid var(--bd2);border-radius:100px;font-size:11px;letter-spacing:6px;color:var(--t3);margin-bottom:32px;animation:ri .7s ease both}
+.hero-tag{display:inline-block;padding:4px 20px;border:1px solid var(--bd2);border-radius:100px;font-size:12px;letter-spacing:6px;color:var(--t3);margin-bottom:32px;animation:ri .7s ease both}
 .hero h1{font-weight:900;font-size:clamp(26px,6.5vw,52px);line-height:1.2;margin-bottom:16px;animation:ri .7s .08s ease both}
 .hero h1 em{font-style:normal;display:block;background:linear-gradient(135deg,var(--red),var(--emb),var(--gld));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero h1 span{display:block;font-size:.48em;font-weight:400;color:var(--t2);margin-top:8px;-webkit-text-fill-color:var(--t2)}
@@ -32,21 +32,21 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 @media(min-width:560px){.hero-grid{grid-template-columns:repeat(5,1fr);max-width:860px}}
 .hero-cell{text-align:center;padding:14px 8px}
 .hero-cell .mn{font-size:clamp(20px,5vw,30px);font-weight:700;display:block;line-height:1.2}
-.hero-cell small{font-size:11px;color:var(--t3);margin-top:3px;display:block}
-.scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);color:var(--t3);font-size:11px;letter-spacing:4px;animation:bob 2.5s ease-in-out infinite}
+.hero-cell small{font-size:12px;color:var(--t3);margin-top:3px;display:block}
+.scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);color:var(--t3);font-size:12px;letter-spacing:4px;animation:bob 2.5s ease-in-out infinite}
 @keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
 @keyframes ri{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 /* NAV */
 .nav{position:sticky;top:0;z-index:100;background:rgba(5,6,10,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--bd);overflow-x:auto;-webkit-overflow-scrolling:touch}
 .nav::-webkit-scrollbar{display:none}
 .nav-inner{display:flex;max-width:860px;margin:0 auto;padding:0 6px}
-.nav a{color:var(--t3);font-size:11.5px;font-weight:500;padding:14px 13px;white-space:nowrap;border-bottom:2px solid transparent;transition:.25s;flex-shrink:0}
+.nav a{color:var(--t3);font-size:12.5px;font-weight:500;padding:14px 13px;white-space:nowrap;border-bottom:2px solid transparent;transition:.25s;flex-shrink:0}
 .nav a.active,.nav a:hover{color:var(--red);border-bottom-color:var(--red)}
 /* LAYOUT */
 .wrap{max-width:860px;margin:0 auto;padding:0 18px}
 .sec{padding:52px 0 56px;border-bottom:1px solid var(--bd);opacity:0;transform:translateY(24px);transition:opacity .55s,transform .55s}
 .sec.vis{opacity:1;transform:translateY(0)}
-.sec-lb{font-size:11px;letter-spacing:4px;color:var(--red);margin-bottom:6px;font-weight:600}
+.sec-lb{font-size:12px;letter-spacing:4px;color:var(--red);margin-bottom:6px;font-weight:600}
 .sec-ti{font-weight:900;font-size:clamp(20px,4.5vw,28px);line-height:1.35;margin-bottom:6px}
 .sec-su{font-size:13px;color:var(--t2);margin-bottom:30px;line-height:1.8}
 .txt{font-size:14px;color:var(--t2);line-height:2}
@@ -56,14 +56,14 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .st{background:var(--cd);border-radius:12px;padding:16px;border-left:3px solid var(--red)}
 .st-v{font-size:clamp(18px,4vw,24px);font-weight:700;line-height:1.15;margin-bottom:3px}
 .st-l{font-size:12.5px;font-weight:600;color:var(--t1)}
-.st-s{font-size:10.5px;color:var(--t3);margin-top:2px}
+.st-s{font-size:11.5px;color:var(--t3);margin-top:2px}
 .qt{background:linear-gradient(135deg,rgba(220,53,69,.04),rgba(224,122,47,.02));border-left:3px solid var(--red);border-radius:0 12px 12px 0;padding:18px 20px;margin:18px 0;font-size:13px;color:var(--t2);line-height:2}
-.qt .src{display:block;margin-top:6px;font-size:11.5px;color:var(--t3);font-style:italic}
+.qt .src{display:block;margin-top:6px;font-size:12.5px;color:var(--t3);font-style:italic}
 .hl{display:inline;padding:1px 5px;border-radius:3px;font-weight:700;font-size:12.5px}
 .hl-r{background:rgba(220,53,69,.1);color:var(--red)}.hl-e{background:rgba(224,122,47,.1);color:var(--emb)}.hl-t{background:rgba(26,154,142,.1);color:var(--tea)}.hl-b{background:rgba(61,123,184,.1);color:var(--blu)}
 .fc{background:rgba(255,255,255,.012);border-radius:12px;padding:18px;border-top:3px solid var(--red);margin-bottom:10px}
 .fc h4{font-size:13.5px;font-weight:700;margin-bottom:6px}
-.fc p{font-size:12px;color:var(--t2);line-height:2}
+.fc p{font-size:13px;color:var(--t2);line-height:2}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .g2 .cd{text-align:left}
 .g2 .sol{text-align:left}
@@ -78,41 +78,41 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .phi p{font-size:13px;color:var(--t2);line-height:2.1}
 .sol{font-size:13px;color:var(--t2);line-height:2;padding-left:18px;position:relative;margin-bottom:1px}
 .sol::before{content:'›';position:absolute;left:3px;font-weight:700;color:var(--red)}
-.ref{font-size:12px;color:var(--t3);line-height:2;padding:6px 0;border-bottom:1px solid var(--bd)}
+.ref{font-size:13px;color:var(--t3);line-height:2;padding:6px 0;border-bottom:1px solid var(--bd)}
 .ref:last-child{border-bottom:none}
 .ref b{color:var(--t2);font-weight:600}
 /* CHART BOX */
 .cht{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:18px;margin-bottom:14px;overflow:hidden}
 .cht-h{font-size:13px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:6px}
 .cht-h::before{content:'';width:3px;height:14px;background:var(--red);border-radius:2px;flex-shrink:0}
-.cht-f{font-size:10.5px;color:var(--t3);margin-top:10px;text-align:center;line-height:1.6}
+.cht-f{font-size:11.5px;color:var(--t3);margin-top:10px;text-align:center;line-height:1.6}
 /* SVG CHART STYLES */
 .cht svg{width:100%;display:block}
-.bar-label{fill:var(--t2);font-size:11px;font-family:inherit}
-.bar-value{fill:var(--t1);font-size:11px;font-family:'SF Mono',Menlo,Consolas,monospace;font-weight:600}
-.axis-label{fill:var(--t3);font-size:10px;font-family:inherit}
+.bar-label{fill:var(--t2);font-size:12px;font-family:inherit}
+.bar-value{fill:var(--t1);font-size:12px;font-family:'SF Mono',Menlo,Consolas,monospace;font-weight:600}
+.axis-label{fill:var(--t3);font-size:11px;font-family:inherit}
 .grid-line{stroke:rgba(255,255,255,.04);stroke-width:1}
 /* CSS BAR CHART */
 .css-bar{margin-bottom:8px}
 .css-bar-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
-.css-bar-label{font-size:12px;color:var(--t2);min-width:70px;text-align:right;flex-shrink:0}
+.css-bar-label{font-size:13px;color:var(--t2);min-width:70px;text-align:right;flex-shrink:0}
 .css-bar-track{flex:1;height:22px;background:rgba(255,255,255,.03);border-radius:4px;overflow:hidden;position:relative}
 .css-bar-fill{height:100%;border-radius:4px;transition:width 1.2s cubic-bezier(.22,1,.36,1);display:flex;align-items:center;justify-content:flex-end;padding-right:6px}
-.css-bar-val{font-size:10px;font-weight:700;color:rgba(255,255,255,.9);white-space:nowrap}
-.css-bar-ext{font-size:12px;color:var(--t1);margin-left:10px;min-width:72px;flex-shrink:0;font-weight:700;opacity:.92}
+.css-bar-val{font-size:11px;font-weight:700;color:rgba(255,255,255,.9);white-space:nowrap}
+.css-bar-ext{font-size:13px;color:var(--t1);margin-left:10px;min-width:72px;flex-shrink:0;font-weight:700;opacity:.92}
 /* DONUT CSS */
 .donut-wrap{display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:center}
 .donut-svg{width:180px;height:180px;flex-shrink:0}
 .donut-legend{display:flex;flex-direction:column;gap:4px}
-.donut-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--t2)}
+.donut-item{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--t2)}
 .donut-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
 /* PROGRESS BAR (for insurance etc) */
 .pr{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--bd)}
 .pr:last-child{border-bottom:none}
-.pr-l{font-size:11.5px;color:var(--t1);min-width:80px;flex-shrink:0}
+.pr-l{font-size:12.5px;color:var(--t1);min-width:80px;flex-shrink:0}
 .pr-bar{flex:1;height:6px;background:rgba(255,255,255,.04);border-radius:3px;overflow:hidden}
 .pr-fill{height:100%;border-radius:3px;width:0;transition:width 1.4s cubic-bezier(.22,1,.36,1)}
-.pr-v{font-size:12px;font-weight:700;min-width:80px;text-align:right;flex-shrink:0}
+.pr-v{font-size:13px;font-weight:700;min-width:80px;text-align:right;flex-shrink:0}
 /* LINE CHART CSS */
 .line-chart{position:relative;padding:10px 0}
 .line-chart svg{width:100%;overflow:visible}
@@ -128,25 +128,25 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .toast{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.9);background:rgba(0,0,0,.88);color:#fff;padding:14px 28px;border-radius:10px;font-size:14px;z-index:300;opacity:0;pointer-events:none;transition:.25s}
 .toast.show{opacity:1;transform:translate(-50%,-50%) scale(1)}
 .toc{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:22px;margin:28px 0}
-.toc-t{font-size:13px;font-weight:700;margin-bottom:12px}
-.toc a{display:block;font-size:13px;color:var(--t2);padding:5px 0;border-bottom:1px solid var(--bd);transition:.2s}
+.toc-t{font-size:14px;font-weight:700;margin-bottom:12px}
+.toc a{display:block;font-size:14px;color:var(--t2);padding:5px 0;border-bottom:1px solid var(--bd);transition:.2s}
 .toc a:last-child{border-bottom:none}
 .toc a:hover{color:var(--red);padding-left:6px}
 .toc .n{color:var(--red);font-weight:600;margin-right:6px}
 .footer{padding:40px 0 90px;text-align:center}
-.footer p{font-size:11px;color:var(--t3);line-height:2;max-width:700px;margin:0 auto;padding:0 16px}
+.footer p{font-size:12px;color:var(--t3);line-height:2;max-width:700px;margin:0 auto;padding:0 16px}
 @media(max-width:480px){.g2,.g3{grid-template-columns:1fr}.cd{padding:16px}.cht{padding:14px}.sec{padding:36px 0 40px}}
 /* ===== Citation tags / 学术引用角标 ===== */
 .has-cite{position:relative}
-.cite-tag{ position:absolute;top:10px;right:12px; font-size:12px;line-height:1; padding:4px 8px;border-radius:999px; border:1px solid var(--bd2); background:rgba(20,22,30,.55); color:var(--t2); text-decoration:none; backdrop-filter: blur(6px);
+.cite-tag{ position:absolute;top:10px;right:12px; font-size:13px;line-height:1; padding:4px 8px;border-radius:999px; border:1px solid var(--bd2); background:rgba(20,22,30,.55); color:var(--t2); text-decoration:none; backdrop-filter: blur(6px);
 }
 .cite-tag:hover{border-color:rgba(255,255,255,.35);color:var(--t1);transform:translateY(-1px)}
-.cite-inline{font-size:12px;vertical-align:super;margin-left:2px}
+.cite-inline{font-size:13px;vertical-align:super;margin-left:2px}
 .cite-inline a{color:var(--t2);text-decoration:none;border-bottom:1px dotted rgba(255,255,255,.25)}
 .cite-inline a:hover{color:var(--t1);border-bottom-color:rgba(255,255,255,.45)}
 .ref.flash{outline:2px solid rgba(220,53,69,.45);border-radius:10px;padding:10px;background:rgba(220,53,69,.06)}
 /* Floating back-to-top */
-#toTop{ position:fixed;right:16px;bottom:18px;z-index:99; display:none;align-items:center;gap:8px; padding:10px 12px;border-radius:999px; border:1px solid var(--bd2); background:rgba(18,20,28,.65); color:var(--t2);font-size:12px;cursor:pointer; backdrop-filter: blur(8px);
+#toTop{ position:fixed;right:16px;bottom:18px;z-index:99; display:none;align-items:center;gap:8px; padding:10px 12px;border-radius:999px; border:1px solid var(--bd2); background:rgba(18,20,28,.65); color:var(--t2);font-size:13px;cursor:pointer; backdrop-filter: blur(8px);
 }
 #toTop:hover{color:var(--t1);border-color:rgba(255,255,255,.35);transform:translateY(-1px)}
 
@@ -162,14 +162,14 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .qrbox img{width:112px;height:112px;border-radius:12px;border:1px solid var(--bd);box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .qrbox .qrcap{max-width:360px;text-align:left}
 .qrbox .qrcap .t{font-size:13px;font-weight:700;color:var(--t1);margin-bottom:4px}
-.qrbox .qrcap .s{font-size:11.5px;color:var(--t3);line-height:1.7}
-.qrbox .qrcap .lnk{font-size:11.5px;color:var(--tea);word-break:break-all}
+.qrbox .qrcap .s{font-size:12.5px;color:var(--t3);line-height:1.7}
+.qrbox .qrcap .lnk{font-size:12.5px;color:var(--tea);word-break:break-all}
 
 
 
 /* Province map table */
-.ptb{width:100%;border-collapse:collapse;font-size:12px;margin:10px 0}
-.ptb th{text-align:left;color:var(--t3);font-weight:600;padding:8px 6px;border-bottom:1px solid var(--bd2);font-size:11px;letter-spacing:1px}
+.ptb{width:100%;border-collapse:collapse;font-size:13px;margin:10px 0}
+.ptb th{text-align:left;color:var(--t3);font-weight:600;padding:8px 6px;border-bottom:1px solid var(--bd2);font-size:12px;letter-spacing:1px}
 .ptb td{padding:7px 6px;border-bottom:1px solid var(--bd);color:var(--t2)}
 .ptb tr:hover td{background:rgba(255,255,255,.02)}
 .ptb .prov{color:var(--t1);font-weight:600}
@@ -177,7 +177,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .ptb .md{color:var(--emb);font-weight:600}
 .ptb .lo{color:var(--tea);font-weight:600}
 /* Tag pills */
-.tag{display:inline-block;padding:2px 10px;border-radius:100px;font-size:11px;font-weight:600;margin:2px}
+.tag{display:inline-block;padding:2px 10px;border-radius:100px;font-size:12px;font-weight:600;margin:2px}
 .tag-r{background:rgba(220,53,69,.12);color:var(--red)}
 .tag-e{background:rgba(224,122,47,.12);color:var(--emb)}
 .tag-t{background:rgba(26,154,142,.12);color:var(--tea)}
@@ -187,26 +187,26 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .vs-row{display:flex;gap:12px;margin:8px 0;align-items:stretch}
 .vs-box{flex:1;background:rgba(255,255,255,.015);border-radius:10px;padding:14px;border-top:3px solid var(--red)}
 .vs-box.b{border-top-color:var(--tea)}
-.vs-box h5{font-size:12px;font-weight:700;margin-bottom:8px}
+.vs-box h5{font-size:13px;font-weight:700;margin-bottom:8px}
 .vs-box p{font-size:12.5px;color:var(--t2);line-height:1.9}
 @media(max-width:480px){.vs-row{flex-direction:column}}
 /* Cost breakdown stack */
 .cost-stack{display:flex;flex-direction:column;gap:4px;margin:10px 0}
 .cost-item{display:flex;align-items:center;gap:8px}
-.cost-bar{height:20px;border-radius:4px;display:flex;align-items:center;padding:0 8px;font-size:10px;font-weight:700;color:rgba(255,255,255,.9);min-width:40px}
-.cost-label{font-size:12px;color:var(--t2);min-width:70px;text-align:right;flex-shrink:0}
-.cost-val{font-size:12px;color:var(--t1);font-weight:600;margin-left:auto;min-width:60px;text-align:right}
+.cost-bar{height:20px;border-radius:4px;display:flex;align-items:center;padding:0 8px;font-size:11px;font-weight:700;color:rgba(255,255,255,.9);min-width:40px}
+.cost-label{font-size:13px;color:var(--t2);min-width:70px;text-align:right;flex-shrink:0}
+.cost-val{font-size:13px;color:var(--t1);font-weight:600;margin-left:auto;min-width:60px;text-align:right}
 
 /* Research-level visuals */
-.viz-note{font-size:11.5px;color:var(--t3);line-height:1.7}
+.viz-note{font-size:12.5px;color:var(--t3);line-height:1.7}
 .geo-legend{display:flex;gap:8px;justify-content:center;align-items:center;margin-top:8px;flex-wrap:wrap}
-.geo-chip{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--t2)}
+.geo-chip{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--t2)}
 .geo-chip i{display:inline-block;width:12px;height:8px;border-radius:2px}
-.net-lbl{font-size:10px;fill:var(--t2)}
-.node-tag{font-size:9.5px;fill:#fff;font-weight:700}
+.net-lbl{font-size:11px;fill:var(--t2)}
+.node-tag{font-size:10.5px;fill:#fff;font-weight:700}
 .dag-box{fill:rgba(255,255,255,.03);stroke:rgba(255,255,255,.2);stroke-width:1.2;rx:9;ry:9}
-.dag-key{font-size:10px;fill:var(--t2)}
-.dag-title{font-size:10.5px;fill:#fff;font-weight:700}
+.dag-key{font-size:11px;fill:var(--t2)}
+.dag-title{font-size:11.5px;fill:#fff;font-weight:700}
 
 
 
@@ -341,10 +341,10 @@ svg,img{
 <div class="scroll-hint">▽ 向 下 探 索</div>
 </section>
 <!-- ============ NAV ============ -->
-<nav class="nav"><div class="nav-inner"><a href="#s1">现象</a><a href="#s12">现实</a><a href="#s2">结婚</a><a href="#s3">生育</a><a href="#s13">性别</a><a href="#s4">彩礼</a><a href="#s5">房价</a><a href="#s6">养育</a><a href="#s7">就业</a><a href="#s9">省份</a><a href="#s8">爱情</a><a href="#s10">后果</a><a href="#s11">出路</a><a href="#s14">参考</a></div></nav>
+<nav class="nav"><div class="nav-inner"><a href="#s1">现象</a><a href="#s12">现实</a><a href="#s2">结婚</a><a href="#s3">生育</a><a href="#s13">性别</a><a href="#s4">彩礼</a><a href="#s5">房价</a><a href="#s6">养育</a><a href="#s7">就业</a><a href="#s9">图谱</a><a href="#s8">爱情</a><a href="#s10">后果</a><a href="#s11">出路</a><a href="#s14">参考</a></div></nav>
 <div class="wrap">
 <!-- TOC -->
-<div class="toc"><div class="toc-t">📑 全文目录（14章）</div><a href="#s1"><span class="n">01</span> 现象：消失的爱人</a><a href="#s12"><span class="n">02</span> 现实：数据可做说明</a><a href="#s2"><span class="n">03</span> 结婚：结婚登记为什么断崖式下跌</a><a href="#s3"><span class="n">04</span> 生育：低生育不只是“不想生”</a><a href="#s13"><span class="n">05</span> 性别：谁在承担婚育制度的隐性成本</a><a href="#s4"><span class="n">06</span> 彩礼：为什么越来越像一场交易</a><a href="#s5"><span class="n">07</span> 房价：房子如何变成婚育的闸门</a><a href="#s6"><span class="n">08</span> 养育：为什么中国孩子“太贵了”</a><a href="#s7"><span class="n">09</span> 就业：收入、时间与预期为何一起失稳</a><a href="#s9"><span class="n">10</span> 省份图谱：一个中国，多个婚育世界</a><a href="#s8"><span class="n">11</span> 爱情：爱与责任</a><a href="#s10"><span class="n">12</span> 后果：人口收缩之后，谁来承担未来</a><a href="#s11"><span class="n">13</span> 出路：什么样的改革才可能真正改变趋势</a><a href="#s14"><span class="n">14</span> 参考文献与数据来源</a></div>
+<div class="toc"><div class="toc-t">📑 全文目录（14章）</div><a href="#s1"><span class="n">01</span> 现象：消失的爱人</a><a href="#s12"><span class="n">02</span> 现实：数据可做说明</a><a href="#s2"><span class="n">03</span> 结婚：结婚登记为什么断崖式下跌</a><a href="#s3"><span class="n">04</span> 生育：低生育不只是“不想生”</a><a href="#s13"><span class="n">05</span> 性别：谁在承担婚育制度的隐性成本</a><a href="#s4"><span class="n">06</span> 彩礼：为什么越来越像一场交易</a><a href="#s5"><span class="n">07</span> 房价：房子如何变成婚育的闸门</a><a href="#s6"><span class="n">08</span> 养育：为什么中国孩子“太贵了”</a><a href="#s7"><span class="n">09</span> 就业：收入、时间与预期为何一起失稳</a><a href="#s9"><span class="n">10</span> 图谱：一个中国，多个婚育世界</a><a href="#s8"><span class="n">11</span> 爱情：爱与责任</a><a href="#s10"><span class="n">12</span> 后果：人口收缩之后，谁来承担未来</a><a href="#s11"><span class="n">13</span> 出路：什么样的改革才可能真正改变趋势</a><a href="#s14"><span class="n">14</span> 参考文献与数据来源</a></div>
 <!-- ============ S1: PHENOMENON ============ -->
 <!-- ============ S2: MARRIAGE DATA ============ -->
 <!-- ============ S3: FERTILITY ============ -->
@@ -641,8 +641,8 @@ svg,img{
 </div>
 <div class="phi" style="margin-top:14px"><h4>💡 "母职惩罚"的量化</h4><p>中国女性劳动参与率约<strong>61%</strong>，远高于全球均值52.6%。但生育后——延长产假成本由企业承担，导致企业回避招聘育龄女性；每生一孩工资率下降12-17%；闲暇时间周均减少12.6小时。在中科院调查中，认为婚姻不重要的<strong>女大学生占比比男生高出37.6个百分点</strong>。<strong>当"做母亲"意味着"职业生涯中断"，越来越多女性选择不生。</strong></p></div>
 </section><section class="sec" id="s9">
-<div class="sec-lb">10 — 省份图谱</div>
-<h2 class="sec-ti">省份图谱：一个中国，多个婚育世界</h2>
+<div class="sec-lb">10 — 图谱</div>
+<h2 class="sec-ti">图谱：一个中国，多个婚育世界</h2>
 <p class="sec-su">中国不是单一婚育市场，而是多个成本结构、文化结构与机会结构叠加的复合空间。</p>
 <div class="cd">
 <h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🗺️ 各省核心指标对比</h4>
@@ -659,7 +659,7 @@ svg,img{
 <tr><td class="prov">黑龙江</td><td>人口持续外流</td><td>极低</td><td class="hi">17-20万</td><td>中</td><td>经济下行+高彩礼双杀</td></tr>
 <tr><td class="prov">福建</td><td>沿海习俗浓厚</td><td>中</td><td class="hi">19-30万+房</td><td>高</td><td>"打欠条"分期付彩礼</td></tr>
 </table></div>
-<p style="font-size:11px;color:var(--t3);margin-top:8px">综合民政部、统计局、育娲研究、婚礼纪等多源数据</p>
+<p style="font-size:12px;color:var(--t3);margin-top:8px">综合民政部、统计局、育娲研究、婚礼纪等多源数据</p>
 </div>
 <div class="cd" style="margin-top:14px">
 <h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🔑 省份差异的三条规律</h4>
@@ -713,7 +713,7 @@ svg,img{
 <div class="vs-box"><h5 style="color:var(--red)">2013-2014：自然选择</h5><p>"大部分人总要结婚"是不言自明的。讨论围绕"结婚""孩子""恋爱"。婚姻是人生必经节点。<br/><span class="tag tag-r">结婚是默认项</span><span class="tag tag-e">出轨是主要矛盾</span></p></div>
 <div class="vs-box b"><h5 style="color:var(--tea)">2023-2024：权衡题</h5><p>"是否必须结婚"被越来越多提及。讨论转向婚姻成本、负面事件、家暴。非婚同居成可选项。<br/><span class="tag tag-t">婚姻非必需</span><span class="tag tag-v">家暴受关注</span></p></div>
 </div>
-<p style="font-size:11px;color:var(--t3);margin-top:6px;text-align:center">复旦大学《中国青年网民社会心态调查报告(2014-2024)》· 144.7万条微博数据</p>
+<p style="font-size:12px;color:var(--t3);margin-top:6px;text-align:center">复旦大学《中国青年网民社会心态调查报告(2014-2024)》· 144.7万条微博数据</p>
 </div>
 <div class="cd" style="margin-top:14px">
 <h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🔍 因为爱情</h4>
@@ -974,11 +974,11 @@ svg,img{
 <div class="ref"><b>[38]</b> Soul App相关婚恋调查数据（00后恐婚与早婚倾向）.转引：新浪财经/行业报道.2024.</div>
 </div>
 <div class="cd" style="margin-top:14px;background:linear-gradient(135deg,rgba(220,53,69,.02),rgba(196,154,60,.02))">
-<p style="font-size:11.5px;color:var(--t2);line-height:2"><strong>声明：</strong>本报告中数据为AI辅助整理与分析，不构成任何建议。主要数据优先采用官方年度公报与国际组织数据库；不同来源间可能存在统计口径差异，部分彩礼与婚恋调查数据为区间估计，实际因地区与样本而异。</p></div>
+<p style="font-size:12.5px;color:var(--t2);line-height:2"><strong>声明：</strong>本报告中数据为AI辅助整理与分析，不构成任何建议。主要数据优先采用官方年度公报与国际组织数据库；不同来源间可能存在统计口径差异，部分彩礼与婚恋调查数据为区间估计，实际因地区与样本而异。</p></div>
 </section></div><footer class="footer">
 <p><strong style="color:var(--t2)">不敢爱、不敢婚、不敢生：中国婚育困局</strong><br/>深度数据报告 · 14章 · 38篇参考文献<br/><br/>
-<span style="font-size:9px">版式参考项目：<a href="https://dingchenchen6.github.io/Healthreports/" rel="noopener" target="_blank">dingchenchen6.github.io/Healthreports</a></span><br/>
-<span style="font-size:9px">长按保存 · 转发朋友圈 · 让更多人看见沉默的数据</span></p>
+<span style="font-size:10px">版式参考项目：<a href="https://dingchenchen6.github.io/Healthreports/" rel="noopener" target="_blank">dingchenchen6.github.io/Healthreports</a></span><br/>
+<span style="font-size:10px">长按保存 · 转发朋友圈 · 让更多人看见沉默的数据</span></p>
 </footer><div class="share">
 <button class="share-btn share-p" onclick="doShare()">📤 分享到微信</button>
 <button class="share-btn share-s" onclick="doCopy()">🔗 复制链接</button>
