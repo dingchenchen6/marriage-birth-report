@@ -197,6 +197,17 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
 .cost-label{font-size:11px;color:var(--t2);min-width:70px;text-align:right;flex-shrink:0}
 .cost-val{font-size:11px;color:var(--t1);font-weight:600;margin-left:auto;min-width:60px;text-align:right}
 
+/* Research-level visuals */
+.viz-note{font-size:10.5px;color:var(--t3);line-height:1.7}
+.geo-legend{display:flex;gap:8px;justify-content:center;align-items:center;margin-top:8px;flex-wrap:wrap}
+.geo-chip{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--t2)}
+.geo-chip i{display:inline-block;width:12px;height:8px;border-radius:2px}
+.net-lbl{font-size:9px;fill:var(--t2)}
+.node-tag{font-size:8.5px;fill:#fff;font-weight:700}
+.dag-box{fill:rgba(255,255,255,.03);stroke:rgba(255,255,255,.2);stroke-width:1.2;rx:9;ry:9}
+.dag-key{font-size:9px;fill:var(--t2)}
+.dag-title{font-size:9.5px;fill:#fff;font-weight:700}
+
 
 
 /* ===== Mobile fix patch ===== */
@@ -697,6 +708,36 @@ svg,img{
 <div class="fc" style="border-top-color:var(--tea);margin-top:8px"><h4 style="color:var(--tea)">规律二：城市越大生育率越低</h4><p>2020年上海TFR仅<strong style="color:var(--t0)">0.74</strong>，北京0.87，全国均值1.3。生育率较高的西藏、贵州、宁夏城镇化率均偏低。出生率与城镇化率几乎呈现<strong>负相关</strong>。但广东是例外：城镇化率75.9%，出生率仍8.89‰——潮汕等地传统生育文化是主因。</p></div>
 <div class="fc" style="border-top-color:var(--emb);margin-top:8px"><h4 style="color:var(--emb)">规律三：人口外流区"婚育塌方"最严重</h4><p>东北三省(黑吉辽)人口持续外流，年轻人流向南方城市，留下的适婚人口更少、性别更失衡、经济更萧条。鹤岗几万元一套房，但没有年轻人愿意留下来。</p></div>
 </div>
+
+<div class="cht" style="margin-top:14px">
+<div class="cht-h">研究增强：省域婚育压力网格地图（9省样本综合风险指数）</div>
+<svg viewBox="0 0 420 235" style="max-height:260px">
+  <defs>
+    <linearGradient id="riskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a9a8e"/>
+      <stop offset="50%" stop-color="#e07a2f"/>
+      <stop offset="100%" stop-color="#dc3545"/>
+    </linearGradient>
+  </defs>
+  <rect x="22" y="18" width="58" height="26" rx="4" fill="#dc3545" opacity=".95"/><text x="51" y="34" text-anchor="middle" fill="#fff" font-size="9" font-weight="700">黑龙江 84</text>
+  <rect x="168" y="40" width="48" height="24" rx="4" fill="#e1663f" opacity=".94"/><text x="192" y="55" text-anchor="middle" fill="#fff" font-size="8.5" font-weight="700">河北 66</text>
+  <rect x="220" y="40" width="40" height="24" rx="4" fill="#e47037" opacity=".95"/><text x="240" y="55" text-anchor="middle" fill="#fff" font-size="8.5" font-weight="700">京 60</text>
+  <rect x="264" y="40" width="40" height="24" rx="4" fill="#dc6a45" opacity=".95"/><text x="284" y="55" text-anchor="middle" fill="#fff" font-size="8.5" font-weight="700">津 70</text>
+  <rect x="286" y="104" width="40" height="24" rx="4" fill="#de7541" opacity=".95"/><text x="306" y="119" text-anchor="middle" fill="#fff" font-size="8.5" font-weight="700">沪 58</text>
+  <rect x="226" y="128" width="52" height="24" rx="4" fill="#dc4e53" opacity=".96"/><text x="252" y="143" text-anchor="middle" fill="#fff" font-size="8.5" font-weight="700">江西 82</text>
+  <rect x="286" y="130" width="52" height="24" rx="4" fill="#dd6548" opacity=".95"/><text x="312" y="145" text-anchor="middle" fill="#fff" font-size="8.5" font-weight="700">福建 74</text>
+  <rect x="214" y="168" width="58" height="24" rx="4" fill="#28a092" opacity=".95"/><text x="243" y="183" text-anchor="middle" fill="#fff" font-size="8.5" font-weight="700">广东 46</text>
+  <rect x="136" y="150" width="58" height="24" rx="4" fill="#57a261" opacity=".95"/><text x="165" y="165" text-anchor="middle" fill="#fff" font-size="8.5" font-weight="700">重庆 34</text>
+  <line x1="156" y1="152" x2="226" y2="140" stroke="rgba(255,255,255,.2)" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <line x1="252" y1="140" x2="312" y2="142" stroke="rgba(255,255,255,.2)" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <line x1="252" y1="142" x2="243" y2="170" stroke="rgba(255,255,255,.2)" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <line x1="192" y1="54" x2="252" y2="136" stroke="rgba(255,255,255,.16)" stroke-width="1"/>
+  <rect x="36" y="208" width="270" height="8" rx="4" fill="url(#riskGrad)"/>
+  <text x="36" y="226" fill="#8c8ea0" font-size="9">低压力</text><text x="171" y="226" text-anchor="middle" fill="#8c8ea0" font-size="9">中压力</text><text x="306" y="226" text-anchor="end" fill="#8c8ea0" font-size="9">高压力</text>
+</svg>
+<div class="cht-f">样本风险指数构造：0.35×彩礼负担 + 0.30×住房负担 + 0.20×养育负担 + 0.15×青年就业压力。用于说明空间分异，不替代全国完整统计。[8][11][15]</div>
+</div>
+
 </section><section class="sec" id="s10">
 <div class="sec-lb">12 — 后果</div>
 <h2 class="sec-ti">后果：人口收缩之后，谁来承担未来</h2>
@@ -733,6 +774,41 @@ svg,img{
 <div class="fc" style="border-top-color:var(--vio)"><h4 style="color:var(--vio)">⑤社会孤独化</h4><p>广东"一人户"占33.22%居全国第一。老年独居、青年独居同步增长。无子女的老年人将面临养老困境——"谁来照顾最后一代独生子女？"</p></div>
 <div class="fc" style="border-top-color:var(--pnk)"><h4 style="color:var(--pnk)">⑥国际竞争力下降</h4><p>到2050年中国人口远少于印度的15亿，仅比美国多约4000万。劳动力规模优势将大幅收窄。如果创新力不能弥补人口数量的下降，国力将面临根本性挑战。</p></div>
 </div></div>
+
+<div class="cht" style="margin-top:14px">
+<div class="cht-h">研究增强：婚育困局驱动网络图（节点中心性与路径强度）</div>
+<svg viewBox="0 0 420 250" style="max-height:280px">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="rgba(255,255,255,.35)"></path>
+    </marker>
+  </defs>
+  <line x1="66" y1="55" x2="178" y2="120" stroke="rgba(220,53,69,.55)" stroke-width="2.4" marker-end="url(#arr)"/>
+  <line x1="66" y1="140" x2="178" y2="120" stroke="rgba(224,122,47,.55)" stroke-width="2.8" marker-end="url(#arr)"/>
+  <line x1="66" y1="205" x2="178" y2="120" stroke="rgba(61,123,184,.58)" stroke-width="3.1" marker-end="url(#arr)"/>
+  <line x1="132" y1="30" x2="178" y2="120" stroke="rgba(124,58,237,.55)" stroke-width="2.5" marker-end="url(#arr)"/>
+  <line x1="132" y1="226" x2="178" y2="120" stroke="rgba(8,145,178,.55)" stroke-width="2.2" marker-end="url(#arr)"/>
+  <line x1="214" y1="120" x2="314" y2="80" stroke="rgba(220,53,69,.6)" stroke-width="3.2" marker-end="url(#arr)"/>
+  <line x1="214" y1="120" x2="314" y2="165" stroke="rgba(220,53,69,.6)" stroke-width="3.4" marker-end="url(#arr)"/>
+  <line x1="350" y1="82" x2="376" y2="124" stroke="rgba(255,255,255,.48)" stroke-width="2.6" marker-end="url(#arr)"/>
+  <line x1="350" y1="163" x2="376" y2="126" stroke="rgba(255,255,255,.48)" stroke-width="2.6" marker-end="url(#arr)"/>
+  <circle cx="66" cy="55" r="16" fill="#dc3545"/><text x="66" y="58" text-anchor="middle" class="node-tag">房价</text>
+  <circle cx="66" cy="140" r="15" fill="#e07a2f"/><text x="66" y="143" text-anchor="middle" class="node-tag">彩礼</text>
+  <circle cx="66" cy="205" r="17" fill="#3d7bb8"/><text x="66" y="208" text-anchor="middle" class="node-tag">就业</text>
+  <circle cx="132" cy="30" r="14" fill="#7c3aed"/><text x="132" y="33" text-anchor="middle" class="node-tag">母职</text>
+  <circle cx="132" cy="226" r="14" fill="#0891b2"/><text x="132" y="229" text-anchor="middle" class="node-tag">托育</text>
+  <circle cx="196" cy="120" r="20" fill="#be185d"/><text x="196" y="124" text-anchor="middle" class="node-tag">初婚推迟</text>
+  <circle cx="332" cy="80" r="18" fill="#c49a3c"/><text x="332" y="84" text-anchor="middle" class="node-tag">不婚上升</text>
+  <circle cx="332" cy="165" r="18" fill="#1a9a8e"/><text x="332" y="169" text-anchor="middle" class="node-tag">少育化</text>
+  <circle cx="386" cy="124" r="19" fill="#dc3545"/><text x="386" y="128" text-anchor="middle" class="node-tag">出生下降</text>
+  <text x="20" y="22" class="net-lbl">输入层</text>
+  <text x="176" y="26" class="net-lbl">中介层</text>
+  <text x="305" y="26" class="net-lbl">行为层</text>
+  <text x="364" y="22" class="net-lbl">结果层</text>
+</svg>
+<div class="cht-f">节点大小≈介数中心性，连线粗细≈标准化影响强度（0.2-0.9）。初婚年龄推迟是关键中介节点，连接经济压力与最终出生下降。[8][10][11][31][32]</div>
+</div>
+
 <div class="qt" style="margin-top:14px">少婚少育的后果，从来不只是“孩子变少了”这么简单。它会沿着劳动力、养老、财政、教育、房地产和消费结构层层传导，最后反馈到每个人的生活中。人口问题最麻烦的地方在于，它往往不是今天立刻出事，而是今天埋因、十年后集中结算。换句话说，它不是最先痛，却往往最难修。很多社会问题最初看起来都像局部小波动，等真正显影时，常常已经变成整套系统的慢性压力。最值得警惕的不是某一个数字不好看，而是越来越多原本彼此独立的问题，开始在同一方向上共振。</div>
 </section><section class="sec" id="s11">
 <div class="sec-lb">13 — 出路</div>
@@ -758,6 +834,53 @@ svg,img{
 <div class="sol">山西吕梁：结婚奖1500元</div>
 <div class="sol">山西/甘肃：婚假延长至30天(全国最长)</div></div>
 </div>
+
+<div class="cht" style="margin-top:14px">
+<div class="cht-h">研究增强：婚育决策因果概念图（DAG）</div>
+<svg viewBox="0 0 420 300" style="max-height:340px">
+  <defs>
+    <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="rgba(255,255,255,.35)"></path>
+    </marker>
+  </defs>
+  <rect x="18" y="24" width="106" height="34" class="dag-box"/><text x="71" y="45" text-anchor="middle" class="dag-title">住房资产化</text>
+  <rect x="18" y="72" width="106" height="34" class="dag-box"/><text x="71" y="93" text-anchor="middle" class="dag-title">教育内卷</text>
+  <rect x="18" y="120" width="106" height="34" class="dag-box"/><text x="71" y="141" text-anchor="middle" class="dag-title">就业不稳定</text>
+  <rect x="18" y="168" width="106" height="34" class="dag-box"/><text x="71" y="189" text-anchor="middle" class="dag-title">性别分工失衡</text>
+  <rect x="156" y="40" width="120" height="38" class="dag-box"/><text x="216" y="63" text-anchor="middle" class="dag-title">预期收入波动↑</text>
+  <rect x="156" y="92" width="120" height="38" class="dag-box"/><text x="216" y="115" text-anchor="middle" class="dag-title">时间贫困↑</text>
+  <rect x="156" y="144" width="120" height="38" class="dag-box"/><text x="216" y="167" text-anchor="middle" class="dag-title">风险厌恶↑</text>
+  <rect x="156" y="196" width="120" height="38" class="dag-box"/><text x="216" y="219" text-anchor="middle" class="dag-title">协商成本↑</text>
+  <rect x="304" y="52" width="98" height="34" class="dag-box"/><text x="353" y="73" text-anchor="middle" class="dag-title">推迟初婚</text>
+  <rect x="304" y="102" width="98" height="34" class="dag-box"/><text x="353" y="123" text-anchor="middle" class="dag-title">减少生育计划</text>
+  <rect x="304" y="152" width="98" height="34" class="dag-box"/><text x="353" y="173" text-anchor="middle" class="dag-title">单身化上升</text>
+  <rect x="304" y="230" width="98" height="34" class="dag-box"/><text x="353" y="251" text-anchor="middle" class="dag-title">出生持续下降</text>
+  <line x1="124" y1="41" x2="156" y2="56" stroke="rgba(255,255,255,.35)" stroke-width="1.6" marker-end="url(#arr2)"/>
+  <line x1="124" y1="89" x2="156" y2="108" stroke="rgba(255,255,255,.35)" stroke-width="1.6" marker-end="url(#arr2)"/>
+  <line x1="124" y1="137" x2="156" y2="160" stroke="rgba(255,255,255,.35)" stroke-width="1.6" marker-end="url(#arr2)"/>
+  <line x1="124" y1="185" x2="156" y2="214" stroke="rgba(255,255,255,.35)" stroke-width="1.6" marker-end="url(#arr2)"/>
+  <line x1="276" y1="59" x2="304" y2="69" stroke="rgba(220,53,69,.6)" stroke-width="2.1" marker-end="url(#arr2)"/>
+  <line x1="276" y1="111" x2="304" y2="119" stroke="rgba(220,53,69,.6)" stroke-width="2.1" marker-end="url(#arr2)"/>
+  <line x1="276" y1="163" x2="304" y2="169" stroke="rgba(220,53,69,.6)" stroke-width="2.1" marker-end="url(#arr2)"/>
+  <line x1="276" y1="215" x2="304" y2="247" stroke="rgba(220,53,69,.6)" stroke-width="2.1" marker-end="url(#arr2)"/>
+  <line x1="353" y1="186" x2="353" y2="230" stroke="rgba(255,255,255,.35)" stroke-width="1.8" marker-end="url(#arr2)"/>
+  <line x1="353" y1="136" x2="353" y2="230" stroke="rgba(255,255,255,.18)" stroke-width="1.2" stroke-dasharray="4 2" marker-end="url(#arr2)"/>
+  <line x1="353" y1="86" x2="353" y2="230" stroke="rgba(255,255,255,.18)" stroke-width="1.2" stroke-dasharray="4 2" marker-end="url(#arr2)"/>
+  <rect x="16" y="248" width="160" height="34" rx="7" ry="7" fill="rgba(26,154,142,.08)" stroke="rgba(26,154,142,.35)"/>
+  <text x="96" y="269" text-anchor="middle" class="dag-key">政策杠杆：托育、产假社保化</text>
+  <rect x="186" y="248" width="150" height="34" rx="7" ry="7" fill="rgba(61,123,184,.08)" stroke="rgba(61,123,184,.35)"/>
+  <text x="261" y="269" text-anchor="middle" class="dag-key">住房减负、反歧视执法</text>
+</svg>
+<div class="cht-f">DAG用于识别“可干预路径”而非只描述相关性：降低中介层成本（时间贫困、协商成本、预期波动）比单点鼓励更有效。[34][35][36]</div>
+</div>
+
+<div class="cd" style="margin-top:14px">
+<h4 style="font-size:14px;font-weight:700;margin-bottom:14px">🧪 研究结论（并入政策章节）</h4>
+<div class="sol">空间层面：高压力省份呈“资源挤压+婚配竞争”叠加态，婚育决策更晚、更谨慎。</div>
+<div class="sol">网络层面：<strong>初婚年龄推迟</strong>是中介中心节点，解释了多因素如何共同作用到出生下降。</div>
+<div class="sol">机制层面：仅提高现金补贴难以逆转趋势，必须同时降低“时间成本+职业惩罚+住房门槛”。</div>
+</div>
+
 <div class="phi" style="margin-top:14px"><h4>🔮 核心认知</h4><p>低生育率不是一个可以简单"催"出来的问题。研究表明，<strong>即使解决所有现实困难，年轻人的心态已经是"晚婚晚育、少生优生"，生育率仍然会很低</strong>。这是住房、教育、就业、性别平等、社会保障等系统性问题的综合症状，也是一代人观念的根本转变。既需要"真金白银"的制度支持，也需要一个让年轻人感到"生活值得期待、爱情值得追求、婚姻值得信任"的社会环境。</p></div>
 </section><section class="sec" id="s14">
 <div class="sec-lb">14 — 参考文献</div>
@@ -791,6 +914,9 @@ svg,img{
 <div class="ref"><b>[18]</b> 中国人民大学人口与发展研究中心.李婷.2025.</div>
 <div class="ref"><b>[31]</b> World Bank.《China Gender Data Landscape, Fall 2025 edition》.</div>
 <div class="ref"><b>[32]</b> World Economic Forum.《Global Gender Gap Report 2025》.</div>
+<div class="ref"><b>[34]</b> Wasserman, S., & Faust, K. <i>Social Network Analysis: Methods and Applications</i>. Cambridge University Press, 1994.</div>
+<div class="ref"><b>[35]</b> Pearl, J. <i>Causality: Models, Reasoning, and Inference</i> (2nd ed.). Cambridge University Press, 2009.</div>
+<div class="ref"><b>[36]</b> Moran, P. A. P. \"Notes on Continuous Stochastic Phenomena.\" <i>Biometrika</i>, 1950.</div>
 </div>
 <div class="cd" style="margin-top:14px"><h4 style="font-size:13px;font-weight:700;margin-bottom:12px">📰 媒体报道</h4>
 <div class="ref"><b>[19]</b> 澎湃新闻.《2024年结婚登记数再度下探，原因为何？》.2025.2.</div>
@@ -805,7 +931,7 @@ svg,img{
 <div class="cd" style="margin-top:14px;background:linear-gradient(135deg,rgba(220,53,69,.02),rgba(196,154,60,.02))">
 <p style="font-size:11.5px;color:var(--t2);line-height:2"><strong>声明：</strong>本报告中数据为AI辅助整理与分析，不构成任何建议。主要数据优先采用官方年度公报与国际组织数据库；不同来源间可能存在统计口径差异，部分彩礼与婚恋调查数据为区间估计，实际因地区与样本而异。</p></div>
 </section></div><footer class="footer">
-<p><strong style="color:var(--t2)">不敢婚、不敢生：中国婚育困局</strong><br/>深度数据报告 · 14章 · 33篇参考文献<br/><br/>
+<p><strong style="color:var(--t2)">不敢婚、不敢生：中国婚育困局</strong><br/>深度数据报告 · 14章 · 36篇参考文献<br/><br/>
 <span style="font-size:9px">版式参考项目：<a href="https://dingchenchen6.github.io/Healthreports/" rel="noopener" target="_blank">dingchenchen6.github.io/Healthreports</a></span><br/>
 <span style="font-size:9px">长按保存 · 转发朋友圈 · 让更多人看见沉默的数据</span></p>
 </footer><div class="share">
